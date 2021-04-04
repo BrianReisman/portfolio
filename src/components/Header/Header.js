@@ -6,7 +6,8 @@ import Logo from "./Logo/Logo";
 
 const Header = (props) => {
   return (
-    <StyledHeader>
+    // top is for bookmark in scrolling
+    <StyledHeader id="top">
       <Logo />
       <Nav />
     </StyledHeader>

@@ -1,5 +1,6 @@
 import React from "react";
 import StyledNav from "./StyledNav";
+import {GitHub, LinkedIn} from "../../../assets/svgComponents";
 
 const Nav = (props) => {
   return (
@@ -8,6 +9,8 @@ const Nav = (props) => {
       <a href="/">Me</a>
       <a href="/">Contact</a>
       <a href="/">Resume</a>
+      <GitHub/>
+      <LinkedIn/>
     </StyledNav>
   );
 };

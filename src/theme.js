@@ -13,7 +13,7 @@ const theme = {
   size: {
     small: "2.4rem",
     med: "",
-    large: "",
+    h1: "15.5rem",
     section: "",
   },
 };
