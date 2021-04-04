@@ -1,11 +1,11 @@
-import Header from './components/Header/Header';
-import StyledApp from './StyledApp';
-import './app.css'
+import Header from "./components/Header/Header";
+import StyledApp from "./StyledApp";
+import "./app.css";
 
 function App() {
   return (
     <StyledApp>
-      <Header/>
+      <Header />
     </StyledApp>
   );
 }
