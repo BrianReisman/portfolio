@@ -7,6 +7,7 @@ const Nav = (props) => {
       <a href="#">Work</a>
       <a href="#">Me</a>
       <a href="#">Contact</a>
+      <a href="#">Resume</a>
     </StyledNav>
   );
 };
