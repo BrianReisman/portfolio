@@ -1,10 +1,12 @@
-import './App.css';
+import Header from './components/Header/Header';
+import StyledApp from './StyledApp';
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <p>test</p>
-    </div>
+    <StyledApp>
+      <Header/>
+    </StyledApp>
   );
 }
 
