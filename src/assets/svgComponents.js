@@ -1,5 +1,5 @@
 export const GitHub = () => (
-  <a href='https://github.com/BrianReisman' target='_blank'>
+  <a href='https://github.com/BrianReisman' target='_blank' rel="noreferrer">
     <svg
       width="36"
       height="35"

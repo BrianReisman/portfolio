@@ -2,9 +2,9 @@ import React from 'react';
 import StyledCard from './StyledCard';
 const Card = (props) => {
   return(
-    <div>
+    <StyledCard>
       test from index.js
-    </div>
+    </StyledCard>
 )
 };
 
