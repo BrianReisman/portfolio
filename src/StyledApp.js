@@ -5,7 +5,7 @@ const StyledApp = styled.div`
   background-color: ${(props) => props.theme.color.white};
   font-family: ${(props) => props.theme.font.main};
   color: ${(props) => props.theme.color.black};
-  height: 300vh;
+  /* height: 300vh; */
 
   /* global styles */
   p {
