@@ -4,9 +4,8 @@ const StyledText = styled.div`
   display: flex;
   flex-direction: column;
   margin: 20px 0 20px 100px;
-
+  width: 50%;
   /* border: 1px solid tomato; */
-  height: 200vh;
 
   h1 {
     font-size: ${(props) => props.theme.size.h1};
