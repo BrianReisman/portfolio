@@ -15,7 +15,6 @@ const StyledCard = styled.div`
 
   p {
     color: ${(props) => props.theme.color.white};
-    font-size: ${(props) => props.theme.size.small};
   }
   img {
     border-radius: 32px;

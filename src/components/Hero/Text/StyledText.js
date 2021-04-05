@@ -8,19 +8,14 @@ const StyledText = styled.div`
   /* border: 1px solid tomato; */
 
   h1 {
-    font-size: ${(props) => props.theme.size.h1};
+    //size in StyledApp.js
     margin-bottom: 20px; 
-  }
-  p {
-    font-size: ${(props) => props.theme.size.small};
   }
   a,
   span {
     font-size: inherit;
   }
-  a {
-    text-decoration: none;
-  }
+
   .punctuation {
     color: ${(props) => props.theme.color.orange};
   }

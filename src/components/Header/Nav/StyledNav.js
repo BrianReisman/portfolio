@@ -13,8 +13,6 @@ const StyledNav = styled.nav`
   a {
     font-size: ${(props) => props.theme.size.small};
     color: ${(props) => props.theme.color.orange};
-    text-decoration: none;
-    list-style-type: none;
   }
 
   .icons{

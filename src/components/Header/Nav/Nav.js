@@ -7,8 +7,8 @@ const Nav = (props) => {
   return (
     <StyledNav>
       <a href="#work">Work</a>
-      <a href="#work">Me</a>
-      <a href="#work">Contact</a>
+      <a href="#me">Me</a>
+      <a href="#connect">Connect</a>
       <a href={PDF} target='_blank' rel="noreferrer">Resume</a>
       <div className="icons">
         <GitHub />
