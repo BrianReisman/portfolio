@@ -1,26 +1,28 @@
 import styled from "styled-components";
 
 const StyledCard = styled.div`
-  /* background-color: antiquewhite; */
-  /* border: 3px dotted red; */
+  /* border: 2px dotted red; */
 
-  /*//*added padding to parent position: relative; */
-  /*//*^^ top: 50px; */
-  display: flex;
-  /* //*took this off, otherwise filled background beyond card flex: 1; */
-  align-self: center;
-  justify-self: center;
-  box-shadow: -20px 10px 46px rgba(0, 0, 0, 0.2);
+  justify-content: center;
   border-radius: 32px;
+  /* display: flex; */
+
+
+  flex: 1 1 50%;
+  /* flex: 0 0 calc(50%-50px); */
+
 
   p {
     color: ${(props) => props.theme.color.white};
   }
   img {
     border-radius: 32px;
+    flex-shrink: 1;
   }
 
   .container {
+    border: 2px dotted red;
+    box-shadow: -20px 10px 46px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;

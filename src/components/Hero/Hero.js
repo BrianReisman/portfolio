@@ -7,7 +7,7 @@ const Hero = (props) => {
   return (
     <StyledHero>
       <Text />
-      <Card />
+      {/* <Card /> */}
     </StyledHero>
   );
 };

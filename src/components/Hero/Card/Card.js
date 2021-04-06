@@ -1,29 +1,29 @@
 import React from "react";
 import StyledCard from "./StyledCard";
-import Headshot from '../../../assets/headshot.png';
+import Headshot from "../../../assets/headshot.png";
 
-const Card = (props) => {
-  return (
-    <StyledCard>
+const Card = (props) => (
+  <StyledCard>
 
-      <div className="container">
+    {/* <div className="rightSide"> */}
+    <div className="container">
 
-          <div className="photoBorder">
-            <img src={Headshot} alt="Brian's headshot" />
-          </div>
+      <div className="photoBorder">
+        <img src={Headshot} alt="Brian's headshot" />
+      </div>
 
-          <div className="text">
-            <p>Stage actor turned Web Dev</p>
-            <div className="line"></div>
-            <p>Personal finance enthusiast</p>
-            <div className="line"></div>
-            <p>Travel junkie</p>
-          </div>
+      <div className="text">
+        <p>Stage actor turned Web Dev</p>
+        <div className="line"></div>
+        <p>Personal finance enthusiast</p>
+        <div className="line"></div>
+        <p>Travel junkie</p>
+      </div>
 
-        </div>
+    </div>
+    {/* </div> */}
 
-    </StyledCard>
-  );
-};
+  </StyledCard>
+);
 
 export default Card;

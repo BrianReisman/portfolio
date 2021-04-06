@@ -1,15 +1,24 @@
 import styled from "styled-components";
 
 const StyledText = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0 20px 100px;
-  width: 50%;
-  /* border: 1px solid tomato; */
+  /* border: 2px solid tomato; */
+
+  flex: 1 1 50%; //I think this only matters when there are sibling flex items.
+
+width: 100%;
+
+
+
+
+
+
+
+
+
 
   h1 {
     //size in StyledApp.js
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
   a,
   span {

@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 const StyledApp = styled.div`
-  /* border: 1px solid tomato; */
+  /* border: 1px dashed red; */
   background-color: ${(props) => props.theme.color.white};
   font-family: ${(props) => props.theme.font.main};
   color: ${(props) => props.theme.color.black};
-  /* height: 300vh; */
+  max-width: 1440px;
+  margin: 0 auto;
 
   /* global styles */
   p {

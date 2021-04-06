@@ -9,17 +9,18 @@ const Text = (props) => {
         <span className="punctuation">.</span>
       </h1>
       <p>
-        {/* 👉 Frontend Developer
+        👉 Frontend Developer
         <a
           href="https://codeshock.dev/"
           target="_blank"
           rel="noreferrer"
           className="company"
         >
+          {" "}
           @Code Shock
-        </a> */}
+        </a>
       </p>
-      <div style={{ fontWeight: "bold", textAlign: "center" }}>
+      {/* <div style={{ fontWeight: "bold", textAlign: "center", width: '80%', border: '1px solid blue', display: 'flex', flexWrap: 'wrap'}}>
         <p>
           If you'd like to take a look at what's to come,
           <a
@@ -37,7 +38,7 @@ const Text = (props) => {
           If you'd like, you can reach me directly @856.520.1120 or
           brianreisman@protonmail.com
         </p>
-      </div>
+      </div> */}
     </StyledText>
   );
 };
