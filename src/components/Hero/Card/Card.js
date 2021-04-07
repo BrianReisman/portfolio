@@ -5,8 +5,7 @@ import Headshot from "../../../assets/headshot.png";
 const Card = (props) => (
   <StyledCard>
 
-    {/* <div className="rightSide"> */}
-    <div className="container">
+    <div className="card">
 
       <div className="photoBorder">
         <img src={Headshot} alt="Brian's headshot" />
@@ -21,7 +20,6 @@ const Card = (props) => (
       </div>
 
     </div>
-    {/* </div> */}
 
   </StyledCard>
 );

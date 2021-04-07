@@ -4,6 +4,9 @@ import StyledText from "./StyledText";
 const Text = (props) => {
   return (
     <StyledText>
+
+
+
       <h1>
         I<span className="punctuation">'</span>m <br /> Brian <br /> Reisman
         <span className="punctuation">.</span>
@@ -20,6 +23,10 @@ const Text = (props) => {
           @Code Shock
         </a>
       </p>
+
+
+
+
       {/* <div style={{ fontWeight: "bold", textAlign: "center", width: '80%', border: '1px solid blue', display: 'flex', flexWrap: 'wrap'}}>
         <p>
           If you'd like to take a look at what's to come,
@@ -39,6 +46,9 @@ const Text = (props) => {
           brianreisman@protonmail.com
         </p>
       </div> */}
+
+
+
     </StyledText>
   );
 };
