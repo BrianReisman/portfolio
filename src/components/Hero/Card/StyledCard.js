@@ -33,35 +33,26 @@ const StyledCard = styled.div`
     /* padding: 0 min(30px, 3vw); */
     background-color: ${(props) => props.theme.color.purple};
   }
-  .photoBorder {
+  /* .photoBorder {
     border: 2px solid red;
     align-self: center;
     border-radius: 32px;
     width: min(382.2px, 40vw);
     height: min(382.2px, 40vw);
-    /* height: 365px; */
-    background-color: ${(props) => props.theme.color.black};
+    height: 365px;
+    background-color: ${(props) => props.theme.color.white};
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
   img {
     /* //!the png is cropped, not radius needed */
     /* border: 2px solid red; */
-    width: 100%; //*Keeps the border honest
-    padding: 10px; //TODO:
+    background-color: ${(props) => props.theme.color.white}; //!I can give an image a background color??? What's the .photoBorder for then???!
+    width: 80%; //*Keeps the border honest
+    margin: 0 auto;
+    padding: 10px; //TODO: determines is
     border-radius: 32px;
-  }
-  .photoBorder,
-  .text {
-    /* border: 3px solid rosybrown; */
-    /* flex: 1; */ //this doesn't work because the main axis is vertical and
-  }
-  .line {
-    width: 100px;
-    height: 4px;
-    background-color: ${(props) => props.theme.color.orange};
-    margin: 10px 0;
   }
   .text {
     /* height: 146px; */
@@ -70,6 +61,12 @@ const StyledCard = styled.div`
     align-items: center;
     justify-content: space-around;
     text-align: center;
+  }
+  .line {
+    width: 100px;
+    height: 4px;
+    background-color: ${(props) => props.theme.color.orange};
+    margin: 10px 0;
   }
 `;
 export default StyledCard;
