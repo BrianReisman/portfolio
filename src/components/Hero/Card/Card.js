@@ -1,8 +1,9 @@
 import React from "react";
 import StyledCard from "./StyledCard";
-import Headshot from "../../../assets/headshot.png";
+import Headshot from "../../../assets/headshotraw.png";
 
 const Card = (props) => (
+  
   <StyledCard>
 
     <div className="card">

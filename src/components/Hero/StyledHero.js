@@ -29,7 +29,7 @@ const StyledHero = styled.div`
 
   } */
 
-  /* @media (max-width: 1000px){
+  @media (max-width: 768px){
     flex-direction: column;
     align-items: center;
     .card{
@@ -39,6 +39,6 @@ const StyledHero = styled.div`
       font-size: ${(props) => props.theme.size.h1};
 
     }
-  } */
+  }
 `;
 export default StyledHero;
