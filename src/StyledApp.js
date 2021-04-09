@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledApp = styled.div`
-  /* border: 1px dashed red; */
+  border: 1px dashed red;
   
   background-color: ${(props) => props.theme.color.white};
   font-family: ${(props) => props.theme.font.main};
@@ -9,6 +9,7 @@ const StyledApp = styled.div`
 
   max-width: 1440px; //controls screens to the upside
   margin: 0 auto; //and centers the 1440px frame
+  padding: 0 20px 0 0; //right padding app wide
 
   /* global styles */
   p {
@@ -30,6 +31,12 @@ const StyledApp = styled.div`
   }
   h3 {
     font-size: ${(props) => props.theme.size.h3};
+  }
+
+  @media (max-width: 1024px){
+    p{
+      font-size: ${(props) => props.theme.size.small1024};
+    }
   }
 `;
 export default StyledApp;
