@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledApp = styled.div`
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   
   background-color: ${(props) => props.theme.color.white};
   font-family: ${(props) => props.theme.font.main};

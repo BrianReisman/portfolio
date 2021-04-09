@@ -15,6 +15,7 @@ const theme = {
   size: {
     small: "2.4rem",
     small1024: '2.2rem',
+    // small768: '2rem',
     h1: "15.5rem",
     h1768: '13rem',
     h2: '7.2rem',

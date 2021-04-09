@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
-border: 1px solid blue;
+/* border: 1px solid blue; */
   /*//*Changed this to padding of parent component position: relative; */
   /*//*^^ left: 100px; */
   /*//*^^ top: 25px; */

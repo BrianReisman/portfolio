@@ -7,7 +7,7 @@ const StyledCard = styled.div`
   justify-content: center;
   align-items: center; */ //*possible alt to margin: 0 auto in .card
 
-  padding: 0 15px;
+  margin-left: 15px;
 
   //entire card as flex item
   flex: 1;

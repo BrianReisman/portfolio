@@ -4,14 +4,11 @@ import StyledText from "./StyledText";
 const Text = (props) => {
   return (
     <StyledText>
-
-
-
       <h1>
         I<span className="punctuation">'</span>m <br /> Brian <br /> Reisman
         <span className="punctuation">.</span>
       </h1>
-      <p>
+      {/* <p>
         👉 Frontend Developer
         <a
           href="https://codeshock.dev/"
@@ -22,12 +19,18 @@ const Text = (props) => {
           {" "}
           @Code Shock
         </a>
-      </p>
+      </p> */}
 
-
-
-
-      {/* <div style={{ fontWeight: "bold", textAlign: "center", width: '80%', border: '1px solid blue', display: 'flex', flexWrap: 'wrap'}}>
+      <div
+        style={{
+          // border: "1px solid blue",
+          // fontWeight: "bold",
+          textAlign: "center",
+          width: "80%",
+          display: "flex",
+          flexWrap: "wrap",
+        }}
+      >
         <p>
           If you'd like to take a look at what's to come,
           <a
@@ -37,18 +40,25 @@ const Text = (props) => {
             {" "}
             here{" "}
           </a>
-          is my wireframe.
+          is my wireframe and{" "}
+          <a
+            style={{ color: "tomato", fontSize: "2.4rem" }}
+            href="https://github.com/BrianReisman/portfolio"
+          >
+            {" "}
+            here{" "}
+          </a>{" "}
+          is the repo for this site!
         </p>
         <p>
           Work on this site began on 4.4.2021 and is not finished or mobile
           optomized yet <br />
+        </p>
+        <p>
           If you'd like, you can reach me directly @856.520.1120 or
           brianreisman@protonmail.com
         </p>
-      </div> */}
-
-
-
+      </div>
     </StyledText>
   );
 };

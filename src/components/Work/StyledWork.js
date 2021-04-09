@@ -3,10 +3,9 @@ import styled from "styled-components";
 // ! h2 styles are located in StyledApp.js
 
 const StyledWork = styled.div`
-
-/* border: 1px solid tomato; */
-  background-color: ${props => props.theme.color.background};
-  padding-left: 100px;
+  border: 3px solid tomato;
+  padding: 70px 0px 70px 100px; //TODO: use on all section
+  background-color: ${(props) => props.theme.color.background};
 `;
 
 export default StyledWork;

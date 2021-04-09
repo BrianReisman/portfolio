@@ -14,10 +14,10 @@ const StyledHero = styled.div`
   /* padding-left: 100px; */
   /* padding-right: 50px; */
 
-    padding: 70px 0px 70px 100px;
+    padding: 70px 15px 70px 100px;
 
   @media (max-width: 1024px){
-    padding: 50px 0px 50px 100px;
+    padding: 50px 15px 50px 100px;
   }
 
 
