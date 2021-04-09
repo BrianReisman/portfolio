@@ -51,7 +51,7 @@ const Text = (props) => {
           is the repo for this site!
         </p>
         <p>
-          Work on this site began on 4.4.2021 and is not finished or mobile
+          Work on this page began on 4.4.2021 and is not finished or mobile
           optomized yet <br />
         </p>
         <p>
