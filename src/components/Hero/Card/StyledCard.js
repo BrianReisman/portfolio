@@ -5,17 +5,18 @@ const StyledCard = styled.div`
 
   /* display: flex;
   justify-content: center;
-  align-items: center; */ //*possible alt to margin: 0 auto in .card
+  align-items: center; //*possible alt to margin: 0 auto in .card */
 
   margin-left: 15px;
-  //entire card as flex item
+  //entire card as flex item against text.js
   flex: 1;
 
   .card {
+    /* border: 4px dotted lightblue; */
+
     box-shadow: -20px 10px 46px rgba(0, 0, 0, 0.2);
     border-radius: 32px;
     background-color: ${(props) => props.theme.color.purple};
-
 
     margin: 0 auto; //*possible alt to flexbox in StyledCard. This is the card's positioning not its contents.
     display: flex;
@@ -23,7 +24,6 @@ const StyledCard = styled.div`
     justify-content: space-evenly;
     align-items: center;
 
-    /* border: 4px dotted lightblue; */
     /* height: 600px; //*with a height of 600px, the top padding is 33 */
     /* height: max(600px, auto); */
     padding: min(33px, 3vw) 0;

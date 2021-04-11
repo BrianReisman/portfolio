@@ -8,9 +8,9 @@ const Cards = (props) => {
   return (
     <StyledWorkContainer>
       {
-        projects.map(project => {
+        projects.map((project, i) => {
           // console.log(project)
-          return <ProjectCard data={project} />
+          return <ProjectCard key={i} data={project} />
         })
       }
 

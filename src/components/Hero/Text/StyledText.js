@@ -17,8 +17,6 @@ const StyledText = styled.div`
     font-weight: 700;
   }
 
-
-  /* //! */
   #placeholder p{
     margin-top: 20px;
       /* border: 1px solid blue; */
