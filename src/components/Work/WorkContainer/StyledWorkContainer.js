@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledStyledWorkContainer = styled.div`
 
-border: 1px solid tomato;
+/* border: 1px solid tomato; */
 
 height: 100%; //
 display: flex;

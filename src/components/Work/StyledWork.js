@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const StyledWork = styled.div`
   border: 3px solid tomato;
-  padding: 70px 0px 70px 100px; //TODO: use on all section
+  padding: 0px 15px 70px 100px; //TODO: use on all section
   background-color: ${(props) => props.theme.color.background};
 `;
 

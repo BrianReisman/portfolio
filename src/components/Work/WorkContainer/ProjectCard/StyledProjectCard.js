@@ -1,39 +1,88 @@
 import styled from "styled-components";
 
 const StyledProjectCard = styled.div`
+  border: 2px solid tomato;
+  * {
+    /* border: 1px solid blue; */
+  }
+
   background-color: ${(props) => props.theme.color.white};
   border-radius: 8px;
-
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-
-  height: 35vh;
-
-  border: 1px solid tomato;
-  box-sizing: border-box;
+  padding: 30px 35px; //padding instead of height
 
   h3 {
-    margin-right: 25px; //for space between title + dates
     text-align: center;
   }
-  img{
-    width: 10%;
-    height: auto;
+  .cardSection {
+    margin: 10px;
   }
 
-  .projectCardTitle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    border: 1px dotted blueviolet;
-  }
-  .projectCardMain{
+  .projectCardMain {
+    /* border: 2px solid black; */
+    * {
+      /* border: 2px solid black; */
+    }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+  }
+
+  img {
+    flex: 1;
+    /* height: 10%; */
+    width: 1%;
+    /* height: auto; */
+  }
+  .projectText {
+    flex: 2;
+    margin: 15px;
+  }
+
+  a {
+    font-size: ${(props) => props.theme.size.small};
+    text-align: center;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+  }
+  .pipe {
+    margin: 0 15px;
+    font-size: 3.6rem;
+    color: ${(props) => props.theme.color.orange};
+  }
+  .deployment,
+  .repo {
+    color: ${(props) => props.theme.color.purple};
+  }
+  .demo {
+    color: ${(props) => props.theme.color.orange};
+  }
+
+  @media (max-width: 768px) {
+    .projectCardMain {
+      flex-direction: column;
+    }
+    img {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .links {
+      flex-direction: column;
+    }
+    .pipe {
+      display: none;
+    }
+    .deployment,
+    .repo {
+      margin-bottom: 15px;
+    }
   }
 `;
 export default StyledProjectCard;

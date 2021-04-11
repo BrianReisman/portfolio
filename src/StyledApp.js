@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const StyledApp = styled.div`
   /* border: 1px dashed red; */
-  
   background-color: ${(props) => props.theme.color.white};
   font-family: ${(props) => props.theme.font.main};
   color: ${(props) => props.theme.color.black};
@@ -26,7 +25,7 @@ const StyledApp = styled.div`
   h2 {
     font-size: ${(props) => props.theme.size.h2};
     position: relative;
-    padding: 5px 0 0 0;
+    padding: 5px 0 25px 0;
     letter-spacing: 5px;
   }
   h3 {

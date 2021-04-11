@@ -6,7 +6,7 @@ const Cards = (props) => {
   return (
     <StyledWorkContainer>
       <ProjectCard />
-      <ProjectCard />
+      {/* <ProjectCard /> */}
     </StyledWorkContainer>
   );
 };

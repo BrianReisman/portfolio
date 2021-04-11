@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledHero = styled.div`
-  /* border: 2px solid brown; */
+  border: 2px solid brown;
 
   /* min-width: calc(100% -100px); */
   /* width: 100%; */

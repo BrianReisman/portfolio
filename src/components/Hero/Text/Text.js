@@ -8,7 +8,7 @@ const Text = (props) => {
         I<span className="punctuation">'</span>m <br /> Brian <br /> Reisman
         <span className="punctuation">.</span>
       </h1>
-      {/* <p>
+      <p>
         👉 Frontend Developer
         <a
           href="https://codeshock.dev/"
@@ -19,9 +19,9 @@ const Text = (props) => {
           {" "}
           @Code Shock
         </a>
-      </p> */}
+      </p>
 
-      <div
+      {/* <div
         style={{
           // border: "1px solid blue",
           // fontWeight: "bold",
@@ -40,7 +40,7 @@ const Text = (props) => {
             {" "}
             here{" "}
           </a>
-          is my wireframe and{" "}
+          is my Figma wireframe and{" "}
           <a
             style={{ color: "tomato", fontSize: "2.4rem" }}
             href="https://github.com/BrianReisman/portfolio"
@@ -58,7 +58,7 @@ const Text = (props) => {
           If you'd like, you can reach me directly @856.520.1120 or
           brianreisman@protonmail.com
         </p>
-      </div>
+      </div> */}
     </StyledText>
   );
 };
