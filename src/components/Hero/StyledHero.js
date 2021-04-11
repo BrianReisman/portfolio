@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledHero = styled.div`
-  border: 2px solid brown;
+  /* border: 2px solid brown; */
 
   /* min-width: calc(100% -100px); */
   /* width: 100%; */
@@ -21,15 +21,16 @@ const StyledHero = styled.div`
   }
 
 
-  /* @media (max-width: 768px){
+  @media (max-width: 768px){
     flex-direction: column;
     align-items: center;
     .card{
       margin-top: 15px;
     }
     h1{
-      font-size: ${(props) => props.theme.size.h1768};
+      /* font-size: ${(props) => props.theme.size.h1768}; */
+      font-size: 9.5rem;
     }
-  } */
+  }
 `;
 export default StyledHero;

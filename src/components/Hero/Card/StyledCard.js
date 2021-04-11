@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledCard = styled.div`
-  border: 4px dotted red;
+  /* border: 4px dotted red; */
 
   /* display: flex;
   justify-content: center;

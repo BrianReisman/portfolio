@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 const StyledApp = styled.div`
   /* border: 1px dashed red; */
+  
   background-color: ${(props) => props.theme.color.white};
   font-family: ${(props) => props.theme.font.main};
   color: ${(props) => props.theme.color.black};
 
   max-width: 1440px; //controls screens to the upside
   margin: 0 auto; //and centers the 1440px frame
-  padding: 0 20px 0 0; //right padding app wide
+  /* padding: 0 20px 0 0; //right padding app wide */
 
   /* global styles */
   p {
