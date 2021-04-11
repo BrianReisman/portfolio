@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
 const StyledProjectCard = styled.div`
-  border: 2px solid tomato;
+  /* border: 2px solid tomato; */
   * {
     /* border: 1px solid blue; */
   }
 
   background-color: ${(props) => props.theme.color.white};
   border-radius: 8px;
+  box-shadow: -5px 5px 40px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 30px 35px; //padding instead of height
-
+  margin: 25px 0;
   h3 {
     text-align: center;
   }
@@ -81,7 +82,7 @@ const StyledProjectCard = styled.div`
     }
     .deployment,
     .repo {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
   }
 `;
