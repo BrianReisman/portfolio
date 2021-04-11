@@ -16,6 +16,16 @@ const StyledText = styled.div`
     color: ${(props) => props.theme.color.purple};
     font-weight: 700;
   }
+
+
+  /* //! */
+  #placeholder p{
+    margin-top: 20px;
+      /* border: 1px solid blue; */
+    *{
+    }
+    text-align: left;
+  }
 `;
 
 export default StyledText;

@@ -8,7 +8,6 @@ const StyledCard = styled.div`
   align-items: center; */ //*possible alt to margin: 0 auto in .card
 
   margin-left: 15px;
-
   //entire card as flex item
   flex: 1;
 
@@ -69,6 +68,10 @@ const StyledCard = styled.div`
     height: 4px;
     background-color: ${(props) => props.theme.color.orange};
     margin: 10px 0;
+  }
+
+  @media (max-width: 1024px){
+    margin-top: 25px;
   }
 `;
 export default StyledCard;

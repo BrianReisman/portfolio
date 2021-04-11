@@ -21,10 +21,8 @@ const Text = (props) => {
         </a>
       </p>
 
-      {/* <div
+      <div id='placeholder'
         style={{
-          // border: "1px solid blue",
-          // fontWeight: "bold",
           textAlign: "center",
           width: "80%",
           display: "flex",
@@ -58,7 +56,7 @@ const Text = (props) => {
           If you'd like, you can reach me directly @856.520.1120 or
           brianreisman@protonmail.com
         </p>
-      </div> */}
+      </div>
     </StyledText>
   );
 };

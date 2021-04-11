@@ -3,20 +3,35 @@ import StyledProjectCard from "./StyledProjectCard";
 import image from "../../../../assets/danielle-macinnes-IuLgi9PWETU-unsplash.jpg";
 
 const ProjectCard = ({ data }) => {
+  const clickHandler = () => {
+    alert('I can\'t wait for this to take you somewhere awesome!' )
+  }
 
-  const test = data.links.map((link, i) => {
-    return (
-      <a
-        className={link.className}
-        href={link.href}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {link.display} ===
-      </a>
-    );
-  })
-console.log(test)
+  const test = data?.links?.map((link, i) => {
+    if (i % 2 === 0) {
+      return (
+        <a
+          className={link.className}
+          href={link.href}
+          target="_blank"
+          rel="noreferrer"
+          onClick={clickHandler}
+        >
+          {link.display}
+        </a>
+      );
+    } else {
+      return <span className="pipe">||</span>;
+    }
+
+    // if(i % 2 === 1 && i !== 0){
+    // return (
+    // );
+    // }else {
+    //   return <h1>h</h1>
+  });
+
+  console.log(test);
 
   return (
     <StyledProjectCard>
@@ -28,9 +43,8 @@ console.log(test)
       </div>
 
       <div className="links cardSection">
-        {test}
-        <span className="pipe">||</span>
-        <span className="pipe">||</span>
+        {test && test}
+        {/* <span className="pipe">||</span> */}
       </div>
     </StyledProjectCard>
   );
