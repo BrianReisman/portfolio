@@ -23,8 +23,7 @@ const StyledNav = styled.nav`
     width: 80px;
   }
 
-  /* @media(max-width: 768px){ */
-  @media(max-width: 1025px){
+  @media(max-width: ${props => props.theme.breakpoints.tabletH}){
     min-width: 100%;
   }
 `;

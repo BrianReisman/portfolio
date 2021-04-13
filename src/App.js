@@ -11,7 +11,7 @@ import Work from './components/Work/Work';
 function App() {
   useEffect(()=>{
     setTimeout(()=>{
-      alert('Not mobile friendly yet but working on it fast and furiously!')
+      alert('Thanks for visiting! Please know that this project was started on 4.4.2021 and is not finished or mobile compatible... yet! --warmly, Brian')
     }, 1500)
   }, [])
 

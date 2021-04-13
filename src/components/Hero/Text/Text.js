@@ -24,7 +24,7 @@ const Text = (props) => {
       <div id='placeholder'
         style={{
           textAlign: "center",
-          width: "80%",
+          width: "100%",
           display: "flex",
           flexWrap: "wrap",
         }}

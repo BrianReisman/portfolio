@@ -18,11 +18,6 @@ const StyledApp = styled.div`
   a {
     text-decoration: none;
   }
-  h1 {
-    /* "pick whichever fontsize is smaller. Pick the smallest possible of options" */
-    font-size: min(${(props) => props.theme.size.h1}, 12vw);
-    margin-bottom: 20px;
-  }
   h2 {
     font-size: ${(props) => props.theme.size.h2};
     position: relative;
@@ -38,5 +33,7 @@ const StyledApp = styled.div`
       font-size: ${(props) => props.theme.size.small1024};
     }
   }
+
+
 `;
 export default StyledApp;

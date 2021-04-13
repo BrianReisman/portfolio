@@ -9,10 +9,11 @@ const StyledHero = styled.div`
 
 
 
-  @media (max-width: 1024px) {
+  @media (max-width: ${props => props.theme.breakpoints.tabletH}) {
     padding: 50px 15px 50px 100px;
   }
-  @media (max-width: 768px) {
+
+  @media (max-width: ${props => props.theme.breakpoints.tabletV}) {
     flex-direction: column;
     align-items: center;
     .card {
@@ -23,5 +24,9 @@ const StyledHero = styled.div`
       font-size: 9.5rem;
     }
   }
+  @media (max-width: ${props => props.theme.breakpoints.mid}){
+    padding-left: 15px;
+}
+
 `;
 export default StyledHero;

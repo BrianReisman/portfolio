@@ -2,7 +2,6 @@ import React from "react";
 import StyledWorkContainer from "./StyledWorkContainer";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import projects from '../projectInfo'
-console.log(projects)
 
 const Cards = (props) => {
   return (

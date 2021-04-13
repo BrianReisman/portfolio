@@ -85,5 +85,6 @@ const StyledProjectCard = styled.div`
       margin-bottom: 20px;
     }
   }
+  
 `;
 export default StyledProjectCard;

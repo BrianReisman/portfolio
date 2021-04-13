@@ -21,17 +21,18 @@ const theme = {
     h2: '7.2rem',
     h3: '4.8rem',
   },
+  breakpoints: {
+    desktop: "1440px" /* 1440 - desktop */,
+    laptop: "1280px" /* 1280 - laptop */,
+    tabletH: "1024px" /* 1024 - tablet horizontal */,
+    tabletV: "768px" /* 768  - tablet vertical/mobile landscape*/,
+    mid: '600px',
+    mobileL: "425px" /* 425 -Mobile Large*/,
+    mobileM: "375px" /* 375 -Mobile Med*/,
+    mobileS: "320px" /* 320 -Mobile Small*/,
+  },
 };
 
 export default theme;
 
 
-// breakpoints: {
-//   1: "1440px" /* 1440 - desktop */,
-//   2: "1280px" /* 1280 - laptop */,
-//   3: "1024px" /* 1024 - tablet landscape */,
-//   4: "768px" /* 768  - tablet vertical/mobile landscape*/,
-//   5: "425px" /* 425 -Mobile Large, stack*/,
-//   6: "375px" /* 375 -Mobile Med, stack*/,
-//   7: "320px" /* 320 -Mobile Small, stack*/,
-// },
