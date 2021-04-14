@@ -27,6 +27,10 @@ const StyledApp = styled.div`
   h3 {
     font-size: ${(props) => props.theme.size.h3};
   }
+  h4{
+    font-size: ${(props) => props.theme.size.h4};
+
+  }
 
   @media (max-width: 1024px){
     p{

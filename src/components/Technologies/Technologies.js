@@ -1,16 +1,17 @@
-import React from 'react';
-import StyledTechnologies from './StyledTechnologies';
+import React from "react";
+import StyledTechnologies from "./StyledTechnologies";
+import CardContainer from "./CardContainer/CardContainer";
 
 // logos
-import knexLogo from '../../assets/Technologies/Vector.svg'
-
+import knexLogo from "../../assets/Technologies/Vector.svg";
 
 const Technologies = (props) => {
-  return(
+  return (
     <StyledTechnologies>
-      <img src={knexLogo} alt="Knex Logo"/>
+      <h3>Technologies</h3>
+      <CardContainer />
     </StyledTechnologies>
-)
+  );
 };
 
 export default Technologies;

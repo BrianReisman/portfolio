@@ -20,6 +20,7 @@ const theme = {
     h1768: "13rem",
     h2: "7.2rem",
     h3: "4.8rem",
+    h4: "3.6rem",
   },
   breakpoints: {
     desktop: "1440px" /* 1440 - desktop */,

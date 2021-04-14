@@ -19,6 +19,7 @@ function App() {
       <Work />
       <Spacer />
       <Technologies />
+      <Spacer />
     </StyledApp>
   );
 }
