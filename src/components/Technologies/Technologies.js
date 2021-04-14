@@ -1,9 +1,14 @@
 import React from 'react';
 import StyledTechnologies from './StyledTechnologies';
+
+// logos
+import knexLogo from '../../assets/Technologies/Vector.svg'
+
+
 const Technologies = (props) => {
   return(
     <StyledTechnologies>
-      test from Technologies.js
+      <img src={knexLogo} alt="Knex Logo"/>
     </StyledTechnologies>
 )
 };
