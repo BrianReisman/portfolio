@@ -29,7 +29,7 @@ const Text = (props) => {
           flexWrap: "wrap",
         }}
       >
-        <p>
+        {/* <p>
           If you'd like to take a look at what's to come,
           <a
             style={{ color: "tomato", fontSize: "2.4rem" }}
@@ -55,7 +55,7 @@ const Text = (props) => {
         <p>
           If you'd like, you can reach me directly @856.520.1120 or
           brianreisman@protonmail.com
-        </p>
+        </p> */}
       </div>
     </StyledText>
   );

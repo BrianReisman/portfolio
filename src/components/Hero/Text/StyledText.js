@@ -33,17 +33,21 @@ const StyledText = styled.div`
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.tabletV}) {
+    h1 {
+      /* font-size: ${(props) => props.theme.size.h1768}; */
+      font-size: 9.5rem;
+    }
   }
   @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
     margin: 0 30px;
-    h1{
-    font-size: 8rem;
+    h1 {
+      font-size: 8rem;
     }
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobileS}) {
-    h1{
-    font-size: 6rem;
+    h1 {
+      font-size: 6rem;
     }
   }
 `;
