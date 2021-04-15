@@ -13,7 +13,7 @@ const ProjectCard = ({ data }) => {
         //   target="_blank"
         //   rel="noreferrer"
         // >
-        <p>
+        <p key={i}>
           {link.display}
         </p>
         // {/* </a> */}
@@ -27,7 +27,7 @@ const ProjectCard = ({ data }) => {
     }
   });
 
-  console.log(test);
+  // console.log(test);
 
   return (
     <StyledProjectCard>
