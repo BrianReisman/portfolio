@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledCardContainer = styled.div`
-  /* border: 3px dotted peachpuff; */
+  /* border: 2px dotted black; */
 
   padding: 20px;
   display: flex;
@@ -9,18 +9,11 @@ const StyledCardContainer = styled.div`
   justify-content: space-around;
   //images in call 3 cards
   img {
-    height: max(65px, 5vw);
+    /* height: max(65px, 2vw); */
+    height: 65px;
     margin: 10px;
   }
 
-  /* //!commented out before playing */
-  .row1,
-  .row2 {
-    /* border: 2px solid blue; */
-    /* margin: 5px 0; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-  }
   .logos {
     /* border: 2px solid blue; */
     display: flex;
@@ -39,6 +32,14 @@ const StyledCardContainer = styled.div`
   }
   h4 {
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
+    img {
+      /* height: 50px; */
+      height: 12vw;
+    }
   }
 `;
 export default StyledCardContainer;

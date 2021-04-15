@@ -11,10 +11,10 @@ const StyledFrontendCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+margin: 20px 0;
 
   padding: 30px;
-  max-width: 450px; //! hardcoded badness
+  max-width: 400px; //! hardcoded badness
 
   
 

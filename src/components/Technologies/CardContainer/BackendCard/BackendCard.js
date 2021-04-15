@@ -9,7 +9,7 @@ const Backendcard = (props) => {
   return (
     <StyledBackendcard>
       <h4>Backend:</h4>
-      <div className="row1">
+      <div className="logos">
         <span>
           <img src={node} alt="NodeJS logo" />
           <p>NodeJS</p>
@@ -18,8 +18,6 @@ const Backendcard = (props) => {
           <img src={express} alt="Express logo" />
           <p>Express</p>
         </span>
-      </div>
-      <div className="row2">
         <span>
           <img src={knex} alt="Knex logo" />
           <p>Knex</p>

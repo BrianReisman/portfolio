@@ -13,6 +13,12 @@ const StyledTechnologies = styled.div`
 
   @media (max-width: ${props => props.theme.breakpoints.mid}){
     padding-left: 15px;
+    h3{
+      font-size: 12.4vw;
+    }
+    h4{
+      font-size: 10vw;
+    }
 }
 `;
 export default StyledTechnologies;
