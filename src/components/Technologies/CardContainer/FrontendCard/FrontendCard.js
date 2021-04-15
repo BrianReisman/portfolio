@@ -14,16 +14,32 @@ const FrontendCard = (props) => {
     <StyledFrontendCard>
       <h4>Frontend:</h4>
       <div className="row1">
-        <label htmlFor="">
-          <img src={html} alt="html logo" /> html
-        </label>
-        <img src={css} alt="css logo" />
-        <img src={javascript} alt="javascript logo" />
+        <span>
+          <img src={html} alt="html logo" />
+          <p>HTML</p>
+        </span>
+        <span>
+          <img src={css} alt="css logo" />{" "}
+          <p>CSS</p>
+        </span>
+        <span>
+          <img src={javascript} alt="javascript logo" />
+          <p>JavaScript</p>
+        </span>
       </div>
       <div className="row2">
-        <img src={react} alt="react logo" />
-        <img src={redux} alt="redux logo" />
-        <img src={styledComponents} alt="styledComponents logo" />
+        <span>
+          <img src={react} alt="react logo" />
+          <p>React</p>
+        </span>
+        <span>
+          <img src={redux} alt="redux logo" />
+          <p>Redux</p>
+        </span>
+        <span>
+          <img src={styledComponents} alt="styledComponents logo" />
+          <p>Style-Components</p>
+        </span>
       </div>
     </StyledFrontendCard>
   );
