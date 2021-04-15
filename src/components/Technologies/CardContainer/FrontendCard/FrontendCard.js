@@ -13,7 +13,7 @@ const FrontendCard = (props) => {
   return (
     <StyledFrontendCard>
       <h4>Frontend:</h4>
-      <div className="row1">
+      <div className="logos">
         <span>
           <img src={html} alt="html logo" />
           <p>HTML</p>
@@ -26,8 +26,6 @@ const FrontendCard = (props) => {
           <img src={javascript} alt="javascript logo" />
           <p>JavaScript</p>
         </span>
-      </div>
-      <div className="row2">
         <span>
           <img src={react} alt="react logo" />
           <p>React</p>
@@ -38,7 +36,7 @@ const FrontendCard = (props) => {
         </span>
         <span>
           <img src={styledComponents} alt="styledComponents logo" />
-          <p>Style-Components</p>
+          <p>Style<br/>Components</p>
         </span>
       </div>
     </StyledFrontendCard>

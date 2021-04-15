@@ -7,7 +7,7 @@ const CardContainer = (props) => {
   return (
     <StyledCardContainer>
       <FrontendCard className='eachCard' />
-      <BackendCard className='eachCard' />
+      {/* <BackendCard className='eachCard' /> */}
     </StyledCardContainer>
   );
 };
