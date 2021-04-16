@@ -2,8 +2,12 @@ import React from 'react';
 import StyledButton from './StyledButton';
 
 const Button = (props) => {
+  const clickHandler = ()=>{
+    alert('clicked')
+  }
+  
   return(
-    <StyledButton>
+    <StyledButton onClick={clickHandler}>
         {props.text}
     </StyledButton>
 )
