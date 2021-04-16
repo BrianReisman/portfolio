@@ -8,7 +8,7 @@ import Hero from "./components/Hero/Hero";
 import Spacer from "./components/util/Spacer/Spacer";
 import Work from "./components/Work/Work";
 import Technologies from "./components/Technologies/Technologies";
-
+import Me from "./components/Me/Me";
 function App() {
   return (
     <StyledApp>
@@ -19,6 +19,9 @@ function App() {
       <Work />
       <Spacer />
       <Technologies />
+      <Spacer />
+      <Me />
+      <Spacer />
       <Spacer />
     </StyledApp>
   );
