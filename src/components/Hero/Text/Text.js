@@ -21,7 +21,8 @@ const Text = (props) => {
         </a>
       </p>
 
-      <div id='placeholder'
+      <div
+        id="placeholder"
         style={{
           textAlign: "center",
           width: "100%",
@@ -30,16 +31,24 @@ const Text = (props) => {
         }}
       >
         <p>
-          If you'd like to take a look at what's to come,
+          Work on this page began 4.4.2021. It is not quite finished or mobile
+          optomized yet.
+        </p>
+        <p>
+          If you'd like to see my Figma wireframe take a look
           <a
+            target="_blank"
+            rel="noreferrer"
             style={{ color: "tomato", fontSize: "2.4rem" }}
             href="https://www.figma.com/file/yFZyzaGVdErza5So9DB29a/Portfolio-Wireframe?node-id=0%3A1"
           >
             {" "}
             here{" "}
           </a>
-          is my Figma wireframe and{" "}
+          and{" "}
           <a
+            target="_blank"
+            rel="noreferrer"
             style={{ color: "tomato", fontSize: "2.4rem" }}
             href="https://github.com/BrianReisman/portfolio"
           >
@@ -47,14 +56,6 @@ const Text = (props) => {
             here{" "}
           </a>{" "}
           is the repo for this site!
-        </p>
-        <p>
-          Work on this page began on 4.4.2021 and is not finished or mobile
-          optomized... yet! <br />
-        </p>
-        <p>
-          If you'd like, you can reach me directly @856.520.1120 or
-          brianreisman@protonmail.com
         </p>
       </div>
     </StyledText>

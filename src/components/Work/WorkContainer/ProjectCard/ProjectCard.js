@@ -6,17 +6,17 @@ const ProjectCard = ({ data }) => {
   const test = data?.links?.map((link, i) => {
     if (i % 2 === 0) {
       return (
-        // <a
-        //   key={i}
-        //   className={link.className}
-        //   href={link.href}
-        //   target="_blank"
-        //   rel="noreferrer"
-        // >
+        <a
+          key={i}
+          className={link.className}
+          href={link.href}
+          target="_blank"
+          rel="noreferrer"
+        >
         <p key={i}>
           {link.display}
         </p>
-        // {/* </a> */}
+        </a>
       );
     } else {
       return (

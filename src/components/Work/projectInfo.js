@@ -8,7 +8,7 @@ const projectInfo = [
     links: [
       // { display: "Just because", href: "/", className: 'deployment' },
       // {pipe: 'pipe'},
-      { display: "Deployment Link", href: "/", className: "deployment" },
+      { display: "", className: "deployment" },
       { pipe: "pipe" },
       {
         display: "Repo Link",
@@ -16,7 +16,7 @@ const projectInfo = [
         className: "repo",
       },
       { pipe: "pipe" },
-      { display: "Demo Video", href: "/", className: "demo" },
+      // { display: "Demo Video", className: "demo" },
     ],
     image: "",
   },

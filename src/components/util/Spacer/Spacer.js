@@ -3,6 +3,7 @@ import StyledSpacer from './StyledSpacer';
 const Spacer = (props) => {
   return(
     <StyledSpacer>
+      <p>{props.text}</p>
     </StyledSpacer>
 )
 };
