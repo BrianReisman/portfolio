@@ -14,7 +14,7 @@ const Short = (props) => {
         <li>Good people, product, and process + remote compatible</li>
         <p>Aside from programming, what else do you enjoy?</p>
         <li>Theater, travel, tea, alliteration, and Muji pens.</li>
-        <p>Any travel in particularly on your mind?</p>
+        <p>Any travel in particular on your mind?</p>
         <li>
           Thank you for asking! Fantasizing about{" "}
           <a
