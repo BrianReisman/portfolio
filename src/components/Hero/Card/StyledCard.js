@@ -58,6 +58,14 @@ const StyledCard = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints.tabletV}) {
     margin-top: 25px; //space between text and card
     margin-left: 0px;
+    .card {
+      flex-direction: row;
+    max-width: 540px;
+    }
+    img,
+    .text {
+      width: 50%; //*Keeps the border honest
+    }
   }
 `;
 export default StyledCard;

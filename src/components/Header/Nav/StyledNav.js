@@ -1,30 +1,20 @@
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
-/* border: 1px solid blue; */
-  /*//*Changed this to padding of parent component position: relative; */
-  /*//*^^ left: 100px; */
-  /*//*^^ top: 25px; */
+  /* border: 1px solid blue; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* min-width: 40%; */
-  min-width: 550px;
+  justify-self: center;
 
-  padding: 0 15px;
   a {
-    font-size: ${(props) => props.theme.size.small};
+    padding: 0 min(25px, 3vw);
+    font-size: min(${(props) => props.theme.size.small}, 3.5vw);
     color: ${(props) => props.theme.color.orange};
   }
-  .icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80px;
-  }
 
-  @media(max-width: ${props => props.theme.breakpoints.tabletH}){
-    min-width: 100%;
+  @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
+    display: none;
   }
 `;
 export default StyledNav;

@@ -1,7 +1,7 @@
 import "./App.css";
 // import {useEffect} from 'react';
 //components
-import Logo from "./components/Logo/Logo";
+// import Logo from "./components/Logo/Logo";
 import Header from "./components/Header/Header";
 import StyledApp from "./StyledApp";
 import Hero from "./components/Hero/Hero";
@@ -14,7 +14,7 @@ import Connect from "./components/Connect/Connect";
 function App() {
   return (
     <StyledApp>
-      <Logo />
+      {/* <Logo /> */}
       <Header />
       <Hero />
       <Spacer />

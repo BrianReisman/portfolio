@@ -21,7 +21,7 @@ const Text = (props) => {
         </a>
       </p>
 
-      <div
+      {/* <div
         id="placeholder"
         style={{
           textAlign: "center",
@@ -57,7 +57,7 @@ const Text = (props) => {
           </a>{" "}
           is the repo for this site!
         </p>
-      </div>
+      </div> */}
     </StyledText>
   );
 };
