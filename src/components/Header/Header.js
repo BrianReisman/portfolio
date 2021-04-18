@@ -8,18 +8,18 @@ import Icons from "./Icons/Icons";
 import Modal from "./Modal/Modal";
 
 const Header = (props) => {
-  const [showModal, setShowModal] = useState(false);
-  console.log(showModal);
+  const [showModal] = useState(false);
+
   const clickHandler = () => {
-    alert("hamburger clicked");
-    setShowModal(!showModal);
+    alert("Are you as excited as I am for this modal to be up and running!");
+    // setShowModal(!showModal);
   };
 
   return (
     <StyledHeader id="top">
       <Logo />
       {!showModal && <Hamburger onClick={clickHandler} />}
-      {showModal && <Modal />}
+      {/* {showModal && <Modal />} */}
       <Nav />
       <Icons />
     </StyledHeader>

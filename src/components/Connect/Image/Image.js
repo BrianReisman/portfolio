@@ -4,7 +4,7 @@ import HappyCheese from "../../../assets/HappyCheese.png";
 const Image = (props) => {
   return (
     <StyledImage>
-        <img src={HappyCheese} alt="happy me with cheese" />
+      <img src={HappyCheese} alt="happy me with cheese" />
     </StyledImage>
   );
 };

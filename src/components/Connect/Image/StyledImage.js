@@ -7,10 +7,10 @@ const StyledImage = styled.div`
   display: flex;
   justify-content: center;
   border-radius: 1000px;
-  width: min(366.95px);
+  width: min(366.95px, 100vw);
 
   img {
-    width: min(346.95px);
+    width: min(346.95px, 100vw);
     background-color: ${(props) => props.theme.color.white};
     border-radius: 200px; //makes full circle
     padding: 10px; //TODO: determines border

@@ -44,10 +44,15 @@ const StyledText = styled.div`
       font-size: 8rem;
     }
   }
+  @media (max-width: ${(props) => props.theme.breakpoints.mobileL}) {
+    h1 {
+      font-size: 7rem;
+    }
+  }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mobileS}) {
     h1 {
-      font-size: 6rem;
+      font-size: 4rem;
     }
   }
 `;

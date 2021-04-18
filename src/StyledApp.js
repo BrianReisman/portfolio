@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledApp = styled.div`
   /* border: 1px dashed red; */
-  
+
   background-color: ${(props) => props.theme.color.white};
   font-family: ${(props) => props.theme.font.main};
   color: ${(props) => props.theme.color.black};
@@ -19,7 +19,7 @@ const StyledApp = styled.div`
     text-decoration: none;
   }
   h2 {
-    font-size: ${(props) => props.theme.size.h2};
+    font-size: min(${(props) => props.theme.size.h2}, 16vw);
     position: relative;
     padding: 5px 0 25px 0;
     letter-spacing: 5px;
@@ -27,17 +27,14 @@ const StyledApp = styled.div`
   h3 {
     font-size: ${(props) => props.theme.size.h3};
   }
-  h4{
+  h4 {
     font-size: ${(props) => props.theme.size.h4};
-
   }
 
-  @media (max-width: 1024px){
-    p{
+  @media (max-width: 1024px) {
+    p {
       font-size: ${(props) => props.theme.size.small1024};
     }
   }
-
-
 `;
 export default StyledApp;

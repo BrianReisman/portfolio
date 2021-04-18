@@ -7,8 +7,8 @@ const StyledLogo = styled.div`
   margin: 20px 0 0 30px;
   box-sizing: border-box;
 
-  @media (max-width: ${props => props.theme.breakpoints.mid}){
-    display: none;
+  @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
+    position: absolute;
   }
 `;
 export default StyledLogo;
