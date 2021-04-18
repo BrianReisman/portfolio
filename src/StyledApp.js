@@ -20,8 +20,7 @@ const StyledApp = styled.div`
   }
   h2 {
     font-size: min(${(props) => props.theme.size.h2}, 16vw);
-    position: relative;
-    padding: 5px 0 25px 0;
+    padding: 10px 0 25px 0;
     letter-spacing: 5px;
   }
   h3 {

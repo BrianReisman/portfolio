@@ -14,11 +14,12 @@ const StyledCard = styled.div`
   margin-top: 20px;
   background-color: ${(props) => props.theme.color.background};
   padding: 15px;
-  box-shadow: -15px 19px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: -15px 19px 54px rgba(0, 0, 0, 0.2);
   border-radius: 32px;
   p,
   .icons {
     margin: 10px;
+    word-break: break-word; //*
   }
   a {
     font-size: ${(props) => props.theme.size.small};
@@ -34,6 +35,10 @@ const StyledCard = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 80px;
+  }
+  @media (max-width: ${props => props.theme.breakpoints.mobileL}){
+    /* background-color: black; */
+    width: 90vw;
   }
 `;
 export default StyledCard;

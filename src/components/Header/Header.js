@@ -5,7 +5,7 @@ import Nav from "./Nav/Nav";
 import Logo from "./Logo/Logo";
 import Hamburger from "./Hamburger/Hamburger";
 import Icons from "./Icons/Icons";
-import Modal from "./Modal/Modal";
+// import Modal from "./Modal/Modal";
 
 const Header = (props) => {
   const [showModal] = useState(false);

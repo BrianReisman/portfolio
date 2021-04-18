@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledBackendcard = styled.div`
   background-color: ${(props) => props.theme.color.background};
@@ -8,7 +8,7 @@ const StyledBackendcard = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  max-width: 350px; //! hardcoded badness
-
+  max-width: 350px;
+  margin: 20px 20px;
 `;
 export default StyledBackendcard;

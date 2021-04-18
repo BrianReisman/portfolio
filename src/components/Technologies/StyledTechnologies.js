@@ -7,18 +7,22 @@ const StyledTechnologies = styled.div`
 
   h3 {
     text-align: center;
-    /* border: 1px solid blue; */
+      margin-top: 10px;
   }
 
 
   @media (max-width: ${props => props.theme.breakpoints.mid}){
     padding-left: 15px;
     h3{
-      font-size: 12.4vw;
+      font-size: 11vw;
     }
     h4{
-      font-size: 10vw;
+      font-size: 9vw;
     }
 }
+@media (max-width: ${props => props.theme.breakpoints.mid}){
+
+}
+
 `;
 export default StyledTechnologies;

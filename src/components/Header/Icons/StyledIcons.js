@@ -5,7 +5,7 @@ const StyledIcons = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-  margin: 25px 30px 0 0;
+  margin: 18px 30px 0 0;
 
   display: flex;
   justify-content: space-between;

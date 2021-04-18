@@ -28,7 +28,6 @@ const StyledCard = styled.div`
     width: 100%; //*Keeps the border honest
   }
   img {
-    border: 1px solid red;
     background-color: ${(props) =>
       props.theme.color
         .white}; //!I can give an image a background color??? What's the .photoBorder for then???!
@@ -40,7 +39,6 @@ const StyledCard = styled.div`
     ); //space between image and text. Needed if no flexbox on card
   }
   .text {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;

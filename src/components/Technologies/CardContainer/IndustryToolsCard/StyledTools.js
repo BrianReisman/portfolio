@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledTools = styled.div`
   background-color: ${(props) => props.theme.color.background};
@@ -9,11 +9,9 @@ const StyledTools = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-margin: 20px 0;
+  margin: 20px 20px;
 
   padding: 30px;
-  max-width: 400px; //! hardcoded badness
-
-
+  max-width: 400px;
 `;
 export default StyledTools;
