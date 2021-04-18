@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
   /* border: 1px solid black; */
   
   /* position: relative; //*allows logo to be positioned absolutely. Was for when logo was in header */

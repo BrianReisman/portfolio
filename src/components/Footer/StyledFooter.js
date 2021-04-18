@@ -1,21 +1,26 @@
 import styled from "styled-components";
 
-const StyledSpacer = styled.div`
+const StyledFooter = styled.footer`
   background-color: ${(props) => props.theme.color.transition};
   height: 50px;
   box-sizing: border-box;
   padding-left: 100px;
 
-  /* added for footer only */
   display: flex;
   align-items: center;
-  p {
-    font-size: 1.6rem;
+
+  p,
+  a {
+    font-size: 1.2rem;
     font-family: Consolas, "courier new";
-    color: crimson;
     text-align: center;
     margin: 0 auto;
-    font-size: 1.2rem;
+  }
+  p {
+    color: crimson;
+  }
+  a {
+    color: ${(props) => props.theme.color.purple};
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
@@ -23,4 +28,4 @@ const StyledSpacer = styled.div`
     padding-left: 15px;
   }
 `;
-export default StyledSpacer;
+export default StyledFooter;

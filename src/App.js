@@ -1,20 +1,19 @@
 import "./App.css";
-// import {useEffect} from 'react';
+
 //components
-// import Logo from "./components/Logo/Logo";
 import Header from "./components/Header/Header";
 import StyledApp from "./StyledApp";
 import Hero from "./components/Hero/Hero";
-import Spacer from "./components/util/Spacer/Spacer";
+import Spacer from "./components/Spacer/Spacer";
 import Work from "./components/Work/Work";
 import Technologies from "./components/Technologies/Technologies";
 import Me from "./components/Me/Me";
 import Connect from "./components/Connect/Connect";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <StyledApp>
-      {/* <Logo /> */}
       <Header />
       <Hero />
       <Spacer />
@@ -25,7 +24,7 @@ function App() {
       <Me />
       <Spacer />
       <Connect />
-      <Spacer text='Built by Brian 2021. Brought to you in part by electricity.'/>
+      <Footer />
     </StyledApp>
   );
 }
