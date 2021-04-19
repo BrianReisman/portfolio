@@ -15,5 +15,10 @@ const StyledIcons = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
     display: none;
   }
+  @media(min-width: 1440px){ //! For those screens larger than 1440px.....
+    position: relative;
+    top: -10px;
+    right: -400px;
+  }
 `;
 export default StyledIcons;

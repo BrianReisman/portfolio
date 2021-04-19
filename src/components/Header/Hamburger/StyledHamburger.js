@@ -8,7 +8,7 @@ const StyledHamburger = styled.div`
   width: 40px;
   height: 22px;
   position: relative;
-  top: -10px;
+  top: -15px;
 
   .row {
     width: 40px;

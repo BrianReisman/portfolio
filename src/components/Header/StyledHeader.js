@@ -3,7 +3,8 @@ import styled from "styled-components";
 const StyledHeader = styled.header`
   /* border: 1px solid black; */
 
-  /* /* position: relative; /allows logo to be positioned absolutely. Was for when logo was in header */
+  /* position: relative; //allows logo to be positioned absolutely. Was for when logo was in header */
+  top: 0;
   background-color: ${(props) => props.theme.color.white};
   padding-top: 35px;
   display: flex;
@@ -14,10 +15,9 @@ const StyledHeader = styled.header`
   @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
     /* border: 1px solid black; */
     position: sticky;
-    top: 0;
+    top: -1px; //avoids top gap
     justify-content: flex-end;
     padding-right: 30px;
-    padding-left: 15px;
   }
 `;
 export default StyledHeader;
