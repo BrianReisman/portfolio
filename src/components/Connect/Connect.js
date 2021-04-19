@@ -6,8 +6,8 @@ import Card from "./Card/Card";
 const Connect = (props) => {
   return (
     <StyledConnect>
-      <h2 id="connect">Connect</h2>
-      <div className='connectContainer'>
+      <h2 ref={props.connectRef}>Connect</h2>
+      <div className="connectContainer">
         <Image />
         <Card />
       </div>

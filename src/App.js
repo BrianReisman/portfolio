@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 import "./App.css";
 
 //components
@@ -12,18 +14,36 @@ import Connect from "./components/Connect/Connect";
 import Footer from "./components/Footer/Footer";
 
 function App() {
+  const workRef = useRef(null);
+  const meRef = useRef(null);
+  const connectRef = useRef(null);
+  const headerRef = useRef(null);
+
+  const navClickHandler = (e) => {
+    let section =
+      e.target.className === "work"
+        ? workRef
+        : e.target.className === "me"
+        ? meRef
+        : e.target.className === "connect"
+        ? connectRef
+        : headerRef;
+    console.log(section);
+    section.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <StyledApp>
-      <Header />
+      <Header navClickHandler={navClickHandler} />
       <Hero />
       <Spacer />
-      <Work />
+      <Work workRef={workRef} />
       <Spacer />
       <Technologies />
       <Spacer />
-      <Me />
+      <Me meRef={meRef}/>
       <Spacer />
-      <Connect />
+      <Connect connectRef={connectRef}/>
       <Footer />
     </StyledApp>
   );

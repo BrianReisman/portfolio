@@ -9,7 +9,7 @@ const Me = (props) => {
 
   return (
     <StyledMe>
-      <h2 id="me">Me</h2>
+      <h2 ref={props.meRef}>Me</h2>
       <div>
         <Short />
       </div>

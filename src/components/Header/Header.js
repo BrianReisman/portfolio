@@ -20,7 +20,7 @@ const Header = (props) => {
       <Logo />
       {!showModal && <Hamburger onClick={clickHandler} />}
       {/* {showModal && <Modal />} */}
-      <Nav />
+      <Nav navClickHandler={props.navClickHandler} />
       <Icons />
     </StyledHeader>
   );

@@ -1,18 +1,13 @@
-// import React, { useState } from "react";
-import React from "react";
+import React, { useRef } from "react";
 import StyledWork from "./StyledWork";
 import WorkContainer from "./WorkContainer/WorkContainer";
 
 const Work = (props) => {
-  // const [showExtraProjects, setShowExtraProjects] = useState(false);
-
-  // const clickHandler = (e) => {
-  //   setShowExtraProjects(!showExtraProjects);
-  // };
+  console.log(props);
 
   return (
     <StyledWork>
-      <h2 id="work">Work</h2>
+      <h2 ref={props.workRef}>Work</h2>
       <WorkContainer />
       {/* <WorkContainer showExtraProjects={showExtraProjects} /> */}
       {/* buttons */}
