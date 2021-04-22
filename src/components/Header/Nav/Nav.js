@@ -3,16 +3,15 @@ import StyledNav from "./StyledNav";
 import PDF from "../../../assets/Brian Reisman - Resume.pdf";
 
 const Nav = (props) => {
-  console.log(props);
   return (
     <StyledNav>
-      <button onClick={props.navClickHandler} className="work">
+      <button onClick={props.scrollClickHandler} className="work">
         Work
       </button>
-      <button onClick={props.navClickHandler} className="me">
+      <button onClick={props.scrollClickHandler} className="me">
         Me
       </button>
-      <button onClick={props.navClickHandler} className="connect">
+      <button onClick={props.scrollClickHandler} className="connect">
         Connect
       </button>
       <a href={PDF} target="_blank" rel="noreferrer">

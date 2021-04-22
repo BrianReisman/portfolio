@@ -5,7 +5,7 @@ import Nav from "./Nav/Nav";
 import Logo from "./Logo/Logo";
 import Hamburger from "./Hamburger/Hamburger";
 import Icons from "./Icons/Icons";
-// import Modal from "./Modal/Modal";
+// import Modal from "../Misc/Modal/Modal";
 
 const Header = (props) => {
   const [showModal] = useState(false);
@@ -16,11 +16,11 @@ const Header = (props) => {
   };
 
   return (
-    <StyledHeader id="top">
-      <Logo />
+    <StyledHeader ref={props.headerRef}>
+      <Logo scrollClickHandler={props.scrollClickHandler}/>
       {!showModal && <Hamburger onClick={clickHandler} />}
       {/* {showModal && <Modal />} */}
-      <Nav navClickHandler={props.navClickHandler} />
+      <Nav scrollClickHandler={props.scrollClickHandler} />
       <Icons />
     </StyledHeader>
   );

@@ -6,12 +6,13 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import StyledApp from "./StyledApp";
 import Hero from "./components/Hero/Hero";
-import Spacer from "./components/Spacer/Spacer";
+import Spacer from "./components/Misc/Spacer";
 import Work from "./components/Work/Work";
 import Technologies from "./components/Technologies/Technologies";
 import Me from "./components/Me/Me";
 import Connect from "./components/Connect/Connect";
 import Footer from "./components/Footer/Footer";
+import Modal from "./components/Misc/Modal/Modal";
 
 function App() {
   const workRef = useRef(null);
@@ -19,7 +20,7 @@ function App() {
   const connectRef = useRef(null);
   const headerRef = useRef(null);
 
-  const navClickHandler = (e) => {
+  const scrollClickHandler = (e) => {
     let section =
       e.target.className === "work"
         ? workRef
@@ -34,17 +35,19 @@ function App() {
 
   return (
     <StyledApp>
-      <Header navClickHandler={navClickHandler} />
+      <Modal scrollClickHandler={scrollClickHandler}/>
+      <Header scrollClickHandler={scrollClickHandler} headerRef={headerRef} />
       <Hero />
       <Spacer />
       <Work workRef={workRef} />
       <Spacer />
       <Technologies />
       <Spacer />
-      <Me meRef={meRef}/>
+      <Me meRef={meRef} />
       <Spacer />
-      <Connect connectRef={connectRef}/>
+      <Connect connectRef={connectRef} />
       <Footer />
+      <div id="overlay active"></div>
     </StyledApp>
   );
 }

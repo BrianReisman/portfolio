@@ -6,10 +6,11 @@ const StyledHeader = styled.header`
   /* position: relative; //allows logo to be positioned absolutely. Was for when logo was in header */
   top: 0;
   background-color: ${(props) => props.theme.color.white};
-  padding-top: 35px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:stretch;
 
   /* border: 1px solid black; */
   @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
@@ -18,6 +19,9 @@ const StyledHeader = styled.header`
     top: -1px; //avoids top gap
     justify-content: flex-end;
     padding-right: 30px;
+    nav{
+      display: none;
+    }
   }
 `;
 export default StyledHeader;

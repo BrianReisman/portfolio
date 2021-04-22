@@ -1,9 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import StyledWork from "./StyledWork";
 import WorkContainer from "./WorkContainer/WorkContainer";
 
 const Work = (props) => {
-  console.log(props);
 
   return (
     <StyledWork>

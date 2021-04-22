@@ -53,6 +53,7 @@ const StyledCard = styled.div`
     height: 4px;
     background-color: ${(props) => props.theme.color.orange};
     margin: 10px 0;
+    border-radius: 50px;
   }
 
   @media (max-width: ${(props) => props.theme.breakpoints.tabletV}) {

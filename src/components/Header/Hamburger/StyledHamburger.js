@@ -8,11 +8,12 @@ const StyledHamburger = styled.div`
   width: 40px;
   height: 22px;
   position: relative;
-  top: -15px;
+  /* top: -16px; */
 
   .row {
     width: 40px;
     height: 4px;
+    border-radius: 50px;
     background-color: ${(props) => props.theme.color.orange};
   }
 

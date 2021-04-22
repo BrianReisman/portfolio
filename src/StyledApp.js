@@ -29,6 +29,21 @@ const StyledApp = styled.div`
   h4 {
     font-size: ${(props) => props.theme.size.h4};
   }
+  #overlay {
+    position: fixed; //so it follows us everywhere
+    opacity: 0;
+    top: 0; //makes sure fills whole screen
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+  }
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 
   @media (max-width: 1024px) {
     p {
