@@ -4,7 +4,7 @@ import { GitHub, LinkedIn } from "../../../assets/svgComponents";
 
 const Icons = (props) => {
   return (
-    <StyledIcons>
+    <StyledIcons className='icons'>
       <GitHub />
       <LinkedIn />
     </StyledIcons>

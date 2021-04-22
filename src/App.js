@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import "./App.css";
 
@@ -15,6 +15,12 @@ import Footer from "./components/Footer/Footer";
 import Modal from "./components/Misc/Modal/Modal";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
+
   const workRef = useRef(null);
   const meRef = useRef(null);
   const connectRef = useRef(null);
@@ -29,14 +35,25 @@ function App() {
         : e.target.className === "connect"
         ? connectRef
         : headerRef;
-    console.log(section);
     section.current.scrollIntoView({ behavior: "smooth" });
+    if(showModal){
+      setShowModal(!showModal)
+    }
   };
 
   return (
     <StyledApp>
-      <Modal scrollClickHandler={scrollClickHandler}/>
-      <Header scrollClickHandler={scrollClickHandler} headerRef={headerRef} />
+      {showModal && (
+        <Modal
+          scrollClickHandler={scrollClickHandler}
+          toggleModal={toggleModal}
+        />
+      )}
+      <Header
+        scrollClickHandler={scrollClickHandler}
+        headerRef={headerRef}
+        toggleModal={toggleModal}
+      />
       <Hero />
       <Spacer />
       <Work workRef={workRef} />
@@ -47,7 +64,15 @@ function App() {
       <Spacer />
       <Connect connectRef={connectRef} />
       <Footer />
-      <div id="overlay active"></div>
+      {showModal && (
+        <div
+          id="overlay"
+          className="active"
+          onClick={() => {
+            toggleModal();
+          }}
+        ></div>
+      )}
     </StyledApp>
   );
 }

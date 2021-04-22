@@ -13,7 +13,7 @@ const StyledIcons = styled.div`
   width: 80px;
 
   @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
-    display: none;
+    /* display: none; */ //issue for icons showing in modal. DELETE
   }
   @media(min-width: 1440px){ //! For those screens larger than 1440px.....
     position: relative;

@@ -3,7 +3,6 @@ import StyledLogo from "./StyledLogo";
 import { LogoSVG } from "../../../assets/svgComponents";
 
 const Logo = (props) => {
-  console.log(props)
   return (
     <StyledLogo onClick={props.scrollClickHandler}>
       <LogoSVG />

@@ -4,14 +4,20 @@ import StyledModal from "./StyledModal";
 import Nav from "../../Header/Nav/Nav";
 
 const Modal = (props) => {
-  return (
-    <StyledModal>
-      <div className="modal-header">
-        <div className="title">Model title</div>
-        <button className="close-button">&times;</button>
-      </div>
+  const closeModal = () => props.toggleModal();
 
-      <Nav scrollClickHandler={props.scrollClickHandler} />
+  return (
+    <StyledModal className="active">
+      <div className="modal-header">
+        <button className="close-button" onClick={closeModal}>
+          &times;
+        </button>
+      </div>
+      <Nav
+        scrollClickHandler={props.scrollClickHandler}
+        closeModal={closeModal}
+        icons
+      />
     </StyledModal>
   );
 };

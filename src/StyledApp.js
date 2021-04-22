@@ -31,14 +31,14 @@ const StyledApp = styled.div`
   }
   #overlay {
     position: fixed; //so it follows us everywhere
-    opacity: 0;
+    opacity: 1;
     top: 0; //makes sure fills whole screen
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
-    transition: 200ms ease-in-out;
+    /* transition: 200ms ease-in-out; */
   }
   #overlay.active {
     opacity: 1;

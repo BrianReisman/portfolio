@@ -1,6 +1,7 @@
 import React from "react";
 import StyledNav from "./StyledNav";
 import PDF from "../../../assets/Brian Reisman - Resume.pdf";
+// import Icons from "../../Header/Icons/Icons";
 
 const Nav = (props) => {
   return (
@@ -17,6 +18,7 @@ const Nav = (props) => {
       <a href={PDF} target="_blank" rel="noreferrer">
         Resume
       </a>
+      {/* {props.icons && <Icons />} */}
     </StyledNav>
   );
 };

@@ -10,7 +10,7 @@ const StyledHeader = styled.header`
   padding-bottom: 15px;
   display: flex;
   justify-content: center;
-  align-items:stretch;
+  align-items: stretch;
 
   /* border: 1px solid black; */
   @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
@@ -19,7 +19,8 @@ const StyledHeader = styled.header`
     top: -1px; //avoids top gap
     justify-content: flex-end;
     padding-right: 30px;
-    nav{
+    nav,
+    .icons {
       display: none;
     }
   }
