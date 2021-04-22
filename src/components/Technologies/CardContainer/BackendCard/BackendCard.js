@@ -1,9 +1,15 @@
 import React from "react";
 import StyledBackendcard from "./StyledBackendcard";
-import node from "../../../../assets/Technologies/node.svg";
-import express from "../../../../assets/Technologies/express.svg";
-import knex from "../../../../assets/Technologies/Vector.svg";
-import sqlite from "../../../../assets/Technologies/Component 2.svg";
+// import node from "../../../../assets/Technologies/node.svg";
+// import express from "../../../../assets/Technologies/express.svg";
+// import knex from "../../../../assets/Technologies/Vector.svg";
+// import sqlite from "../../../../assets/Technologies/Component 2.svg";
+
+
+import node from "../../../../assets/Technologies/blackAndWhite/nodejs-seeklogo.com 2.svg";
+import express from "../../../../assets/Technologies/blackAndWhite/express-js-seeklogo.com 2.svg";
+import knex from "../../../../assets/Technologies/blackAndWhite/Vector.svg";
+import sqlite from "../../../../assets/Technologies/blackAndWhite/Component 3.svg";
 
 const Backendcard = (props) => {
   return (
