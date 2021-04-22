@@ -36,8 +36,8 @@ function App() {
         ? connectRef
         : headerRef;
     section.current.scrollIntoView({ behavior: "smooth" });
-    if(showModal){
-      setShowModal(!showModal)
+    if (showModal) {
+      setShowModal(!showModal);
     }
   };
 
@@ -55,14 +55,14 @@ function App() {
         toggleModal={toggleModal}
       />
       <Hero />
-      <Spacer />
-      <Work workRef={workRef} />
-      <Spacer />
+      <Spacer refType={workRef} />
+      <Work />
+      {/* <Spacer /> */}
       <Technologies />
-      <Spacer />
-      <Me meRef={meRef} />
-      <Spacer />
-      <Connect connectRef={connectRef} />
+      <Spacer refType={meRef} />
+      <Me />
+      <Spacer refType={connectRef} />
+      <Connect />
       <Footer />
       {showModal && (
         <div
