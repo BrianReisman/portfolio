@@ -1,4 +1,4 @@
-// import image from "../../assets/danielle-macinnes-IuLgi9PWETU-unsplash.jpg";
+import CareerShockImg from '../../assets/CareerShock.svg'
 
 const projectInfo = [
   {
@@ -18,7 +18,7 @@ const projectInfo = [
       { pipe: "pipe" },
       // { display: "Demo Video", className: "demo" },
     ],
-    image: "",
+    image: CareerShockImg,
   },
   // {
   //   title: "Driftwood",

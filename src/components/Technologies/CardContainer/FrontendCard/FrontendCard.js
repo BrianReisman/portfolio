@@ -10,12 +10,19 @@ import StyledFrontendCard from "./StyledFrontendCard";
 // import styledComponents from "../../../../assets/Technologies/_💅_.svg";
 
 // logo SVGs - B+W
-import html from "../../../../assets/Technologies/blackAndWhite/html5-without-wordmark-color 2.svg";
-import css from "../../../../assets/Technologies/blackAndWhite/css3 logo.svg";
-import javascript from "../../../../assets/Technologies/blackAndWhite/javascript-js-seeklogo.com 4.svg";
-import react from "../../../../assets/Technologies/blackAndWhite/react.svg";
-import redux from "../../../../assets/Technologies/blackAndWhite/Group.svg";
-import styledComponents from "../../../../assets/Technologies/blackAndWhite/styled-component.svg";
+// import html from "../../../../assets/Technologies/blackAndWhite/html5-without-wordmark-color 2.svg";
+// import css from "../../../../assets/Technologies/blackAndWhite/css3 logo.svg";
+// import javascript from "../../../../assets/Technologies/blackAndWhite/javascript-js-seeklogo.com 4.svg";
+// import react from "../../../../assets/Technologies/blackAndWhite/react.svg";
+// import redux from "../../../../assets/Technologies/blackAndWhite/Group.svg";
+// import styledComponents from "../../../../assets/Technologies/blackAndWhite/styled-component.svg";
+
+import html from "../../../../assets/Technologies/Orange/HTML-ORANGE.svg";
+import css from "../../../../assets/Technologies/Orange/CSS-ORANGE.svg";
+import javascript from "../../../../assets/Technologies/Orange/JS-ORANGE.svg";
+import react from "../../../../assets/Technologies/Orange/React-ORANGE.svg";
+import redux from "../../../../assets/Technologies/Orange/Redux-ORANGE.svg";
+import styledComponents from "../../../../assets/Technologies/Orange/Styled-Components-ORANGE.svg";
 
 const FrontendCard = (props) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import StyledProjectCard from "./StyledProjectCard";
-import image from "../../../../assets/danielle-macinnes-IuLgi9PWETU-unsplash.jpg";
+// import image from "../../../../assets/danielle-macinnes-IuLgi9PWETU-unsplash.jpg";
 
 const ProjectCard = ({ data }) => {
   const test = data?.links?.map((link, i) => {
@@ -34,7 +34,7 @@ const ProjectCard = ({ data }) => {
       <h3 className="cardSection">{data.title}</h3>
 
       <div className="projectCardMain cardSection">
-        <img src={image} alt={`Screenshot of ${data.title}`} />
+        <img src={data.image} alt={`Screenshot of ${data.title}`} />
         <p className="projectText">{data.text}</p>
       </div>
 
