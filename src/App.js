@@ -8,7 +8,6 @@ import StyledApp from "./StyledApp";
 import Hero from "./components/Hero/Hero";
 import Spacer from "./components/Misc/Spacer";
 import Work from "./components/Work/Work";
-import Technologies from "./components/Technologies/Technologies";
 import Me from "./components/Me/Me";
 import Connect from "./components/Connect/Connect";
 import Footer from "./components/Footer/Footer";
@@ -73,7 +72,6 @@ function App() {
       <Spacer />
       <Work refType={workRef} />
       {/* <Spacer /> */}
-      <Technologies />
       <Spacer />
       <Me refType={meRef} />
       <Spacer />
