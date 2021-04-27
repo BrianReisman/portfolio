@@ -14,7 +14,6 @@ const StyledLogo = styled.div`
   }
 
   @media (min-width: 1440px) {
-    //! For those screens larger than 1440px.....
     position: relative;
     top: -10px;
     left: -380px;

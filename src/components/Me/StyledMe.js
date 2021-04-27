@@ -12,6 +12,22 @@ const StyledMe = styled.div`
     justify-content: center;
     padding: 20px 40px;
   }
+  /* .aside{
+    display: flex;
+    *{
+      border: 1px solid blue;
+    }
+    position: absolute;
+    top: 2400px;
+    left: 900px;
+    transform-origin: 0 0;
+    transform: rotate(35deg);
+    img{
+    transform-origin: 0 0;
+    transform: rotate(-35deg);
+
+    }
+  } */
 
   @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
     padding-left: 15px;

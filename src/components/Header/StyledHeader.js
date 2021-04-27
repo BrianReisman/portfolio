@@ -12,6 +12,10 @@ const StyledHeader = styled.header`
   justify-content: center;
   align-items: stretch;
 
+@media(min-width: 1440px){
+  
+}
+
   /* border: 1px solid black; */
   @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
     /* border: 1px solid black; */

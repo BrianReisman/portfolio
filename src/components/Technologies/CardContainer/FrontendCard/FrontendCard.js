@@ -13,7 +13,7 @@ import StyledFrontendCard from "./StyledFrontendCard";
 import html from "../../../../assets/Technologies/blackAndWhite/html5-without-wordmark-color 2.svg";
 import css from "../../../../assets/Technologies/blackAndWhite/css3 logo.svg";
 import javascript from "../../../../assets/Technologies/blackAndWhite/javascript-js-seeklogo.com 4.svg";
-import react from "../../../../assets/Technologies/blackAndWhite/Group 20.svg";
+import react from "../../../../assets/Technologies/blackAndWhite/react.svg";
 import redux from "../../../../assets/Technologies/blackAndWhite/Group.svg";
 import styledComponents from "../../../../assets/Technologies/blackAndWhite/styled-component.svg";
 

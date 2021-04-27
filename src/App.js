@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import "./App.css";
 
@@ -21,12 +21,18 @@ function App() {
     setShowModal(!showModal);
   };
 
-  const workRef = useRef(null);
-  const meRef = useRef(null);
-  const connectRef = useRef(null);
-  const headerRef = useRef(null);
+  const workRef = React.createRef(null);
+  const meRef = React.createRef(null);
+  const connectRef = React.createRef(null);
+  const headerRef = React.createRef(null);
+  // const workRef = useRef(null);
+  // const meRef = useRef(null);
+  // const connectRef = useRef(null);
+  // const headerRef = useRef(null);
 
   const scrollClickHandler = (e) => {
+    e.preventDefault();
+    console.log(e);
     let section =
       e.target.className === "work"
         ? workRef
@@ -35,11 +41,22 @@ function App() {
         : e.target.className === "connect"
         ? connectRef
         : headerRef;
-    section.current.scrollIntoView({ behavior: "smooth" });
+
+    if (section === headerRef) {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    } else {
+      const yAxis = section.current.getBoundingClientRect().top;
+      window.scrollBy({ top: yAxis - 25, left: 0, behavior: "smooth" });
+    }
     if (showModal) {
       setShowModal(!showModal);
     }
   };
+
+  useEffect(() => {
+    console.log("on mount", workRef);
+  }, []);
+  console.log("initial render", workRef);
 
   return (
     <StyledApp>
