@@ -4,7 +4,7 @@ const StyledHero = styled.div`
   /* border: 2px solid brown; */
 
   display: flex;
-  padding: 70px 15px 70px 100px; //TODO: make padding top and bottom responsive, lessen on smaller screens
+  padding: 70px 15px 50px 100px; //TODO: make padding top and bottom responsive, lessen on smaller screens
 
 
 

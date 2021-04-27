@@ -13,7 +13,7 @@ const StyledFrontendCard = styled.div`
   justify-content: center;
   margin: 20px 20px;
 
-  padding: 30px;
-  max-width: 400px;
+  padding: 20px;
+  max-width: 375px;
 `;
 export default StyledFrontendCard;

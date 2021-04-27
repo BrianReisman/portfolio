@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 const StyledCardContainer = styled.div`
   /* border: 2px dotted black; */
+  /* padding: 20px; */
 
-  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  //images in call 3 cards
+
+  //images in all 3 cards
   img {
     /* height: max(65px, 2vw); */
     height: 65px;

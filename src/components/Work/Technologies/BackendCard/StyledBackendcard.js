@@ -7,8 +7,10 @@ const StyledBackendcard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
-  max-width: 350px;
+  justify-content: center;
   margin: 20px 20px;
+
+  padding: 20px;
+  max-width: 375px;
 `;
 export default StyledBackendcard;
