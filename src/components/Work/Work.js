@@ -6,7 +6,7 @@ const Work = (props) => {
 
   return (
     <StyledWork>
-      <h2 ref={props.workRef}>Work</h2>
+      <h2 ref={props.refType}>Work</h2>
       <WorkContainer />
       {/* <WorkContainer showExtraProjects={showExtraProjects} /> */}
       {/* buttons */}

@@ -9,7 +9,7 @@ const Me = (props) => {
 
   return (
     <StyledMe>
-      <h2 ref={props.meRef}>Me</h2>
+      <h2 ref={props.refType}>Me</h2>
       {/* <div className="aside">
         <p>
           7 questions <br /> answered in 7 words

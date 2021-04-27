@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 
 import "./App.css";
 
@@ -21,18 +21,12 @@ function App() {
     setShowModal(!showModal);
   };
 
-  const workRef = React.createRef(null);
-  const meRef = React.createRef(null);
-  const connectRef = React.createRef(null);
-  const headerRef = React.createRef(null);
-  // const workRef = useRef(null);
-  // const meRef = useRef(null);
-  // const connectRef = useRef(null);
-  // const headerRef = useRef(null);
+  const workRef = useRef(null);
+  const meRef = useRef(null);
+  const connectRef = useRef(null);
+  const headerRef = useRef(null);
 
   const scrollClickHandler = (e) => {
-    e.preventDefault();
-    console.log(e);
     let section =
       e.target.className === "work"
         ? workRef
@@ -42,21 +36,25 @@ function App() {
         ? connectRef
         : headerRef;
 
+    let offsetVal = 0;
+    if (window.innerWidth < 600) {
+      offsetVal = 50;
+    } else {
+      offsetVal = 0;
+    }
+
     if (section === headerRef) {
+      //* Keep this specifically for mobile
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     } else {
       const yAxis = section.current.getBoundingClientRect().top;
-      window.scrollBy({ top: yAxis - 25, left: 0, behavior: "smooth" });
+      window.scrollBy({ top: yAxis - offsetVal, letf: 0, behavior: "smooth" });
     }
+
     if (showModal) {
       setShowModal(!showModal);
     }
   };
-
-  useEffect(() => {
-    console.log("on mount", workRef);
-  }, []);
-  console.log("initial render", workRef);
 
   return (
     <StyledApp>
@@ -72,14 +70,14 @@ function App() {
         toggleModal={toggleModal}
       />
       <Hero />
-      <Spacer refType={workRef} />
-      <Work />
+      <Spacer />
+      <Work refType={workRef} />
       {/* <Spacer /> */}
       <Technologies />
-      <Spacer refType={meRef} />
-      <Me />
-      <Spacer refType={connectRef} />
-      <Connect />
+      <Spacer />
+      <Me refType={meRef} />
+      <Spacer />
+      <Connect refType={connectRef} />
       <Footer />
       {showModal && (
         <div
