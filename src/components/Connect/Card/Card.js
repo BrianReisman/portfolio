@@ -1,11 +1,11 @@
 import React from "react";
-import StyledCard from "./StyledCard";
+import {CardRoot} from "./StyledCard";
 import { GitHub, LinkedIn } from "../../../assets/svgComponents";
 import PDF from "../../../assets/Brian Reisman - Resume.pdf";
 
 const Card = (props) => {
   return (
-    <StyledCard>
+    <CardRoot>
       <p>
         Reaching out is unlikely to make me as happy as cheese delivery day on
         top of a glacier in the Yukon territory after not having eaten for two
@@ -32,7 +32,7 @@ const Card = (props) => {
         <GitHub />
         <LinkedIn />
       </div>
-    </StyledCard>
+    </CardRoot>
   );
 };
 

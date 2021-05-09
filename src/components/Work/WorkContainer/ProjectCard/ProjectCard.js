@@ -13,9 +13,7 @@ const ProjectCard = ({ data }) => {
           target="_blank"
           rel="noreferrer"
         >
-        <p key={i}>
-          {link.display}
-        </p>
+          <p key={i}>{link.display}</p>
         </a>
       );
     } else {
@@ -27,7 +25,15 @@ const ProjectCard = ({ data }) => {
     }
   });
 
-  // console.log(test);
+  const list = (
+    <ul className="projectText">
+      {data.text.map((point) => {
+        return <p>// {point}</p>;
+      })}
+    </ul>
+  );
+
+  // console.log(list);
 
   return (
     <StyledProjectCard>
@@ -35,7 +41,7 @@ const ProjectCard = ({ data }) => {
 
       <div className="projectCardMain cardSection">
         <img src={data.image} alt={`Screenshot of ${data.title}`} />
-        <p className="projectText">{data.text}</p>
+        {list}
       </div>
 
       <div className="links cardSection">

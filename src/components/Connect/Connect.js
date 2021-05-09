@@ -1,17 +1,17 @@
 import React from "react";
-import StyledConnect from "./StyledConnect";
+import { ConnectRoot, ConnectContainer } from "./Connect.elements";
 import Image from "./Image/Image";
 import Card from "./Card/Card";
 
 const Connect = (props) => {
   return (
-    <StyledConnect>
+    <ConnectRoot>
       <h2 ref={props.refType}>Connect</h2>
-      <div className="connectContainer">
+      <ConnectContainer>
         <Image />
         <Card />
-      </div>
-    </StyledConnect>
+      </ConnectContainer>
+    </ConnectRoot>
   );
 };
 

@@ -1,10 +1,13 @@
-import CareerShockImg from '../../assets/CareerShock.svg'
+import CareerShockImg from "../../assets/CareerShock.svg";
 
 const projectInfo = [
   {
     title: "Junior Developer Job Board",
-    text:
-      "Using Recoil for state management and implementing global themes with styled-components. Shipping code bi-weekly following agile methodologies and pair programming on a remote team of 6 across 3 time zones using Zoom, Trello, and Slack. Building unit and integration tests with React Testing Library and Jest.",
+    text: [
+      "Using Recoil for state management and implementing global themes with styled-components.",
+      "Building unit and integration tests with React Testing Library and Jest.",
+      "Shipping code bi-weekly following agile methodologies and pair programming on a remote team of 6 across 3 time zones using Zoom, Trello, and Slack.",
+    ],
     links: [
       // { display: "Just because", href: "/", className: 'deployment' },
       // {pipe: 'pipe'},

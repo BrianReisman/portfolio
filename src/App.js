@@ -71,7 +71,6 @@ function App() {
       <Hero />
       <Spacer />
       <Work refType={workRef} />
-      {/* <Spacer /> */}
       <Spacer />
       <Me refType={meRef} />
       <Spacer />
