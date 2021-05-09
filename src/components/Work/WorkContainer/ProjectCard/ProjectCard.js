@@ -28,7 +28,7 @@ const ProjectCard = ({ data }) => {
   const list = (
     <ul className="projectText">
       {data.text.map((point) => {
-        return <p>// {point}</p>;
+        return <p>\\ {point}</p>;
       })}
     </ul>
   );
