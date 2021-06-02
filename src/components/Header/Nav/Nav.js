@@ -1,7 +1,7 @@
 import React from "react";
 import StyledNav from "./StyledNav";
 import PDF from "../../../assets/Brian Reisman - Resume.pdf";
-import Icons from "../../Header/Icons/Icons";
+// import Icons from "../../Header/Icons/Icons";
 
 const Nav = (props) => {
   console.log(props)

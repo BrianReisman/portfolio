@@ -1,13 +1,13 @@
 import React from "react";
 import StyledWork from "./StyledWork";
-import WorkContainer from "./WorkContainer/WorkContainer";
+// import WorkContainer from "./WorkContainer/WorkContainer";
 import StyledTechnologies from "./Technologies/StyledTechnologies";
 import CardContainer from "./Technologies/CardContainer";
 
 const Work = (props) => {
   return (
     <StyledWork>
-      <h2 ref={props.refType}></h2>
+      <h2 ref={props.refType}>Work</h2>
       {/* <WorkContainer /> */}
       {/* <WorkContainer showExtraProjects={showExtraProjects} /> */}
       {/* buttons */}
