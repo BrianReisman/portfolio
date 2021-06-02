@@ -27,6 +27,7 @@ const StyledShort = styled.div`
     padding-left: 16px;
     margin: 20px 0;
     font-style: italic;
+    text-align: right;
   }
   li a {
     color: ${(props) => props.theme.color.orange};

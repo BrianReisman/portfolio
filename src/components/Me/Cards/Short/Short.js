@@ -5,11 +5,11 @@ const Short = (props) => {
     <StyledShort>
       <ul>
         <p>What are you doing now?</p>
-        <li>Treating 6 month bootcamp like grad school.</li>
+        <li>Working with the awesome team at Xenith</li>
         <p>Why tech?</p>
         <li>Teamwork, constant learning, making things, solving problems.</li>
         <p>So, what's next?</p>
-        <li>Finding awesome job + Learning TypeScript, TDD, NextJS</li>
+        <li>Learning TypeScript, GatsbyJS, and Test Driven Development</li>
         <p>What's important to you in a job?</p>
         <li>Good people, product, and process + remote compatible</li>
         <p>Aside from programming, what else do you enjoy?</p>

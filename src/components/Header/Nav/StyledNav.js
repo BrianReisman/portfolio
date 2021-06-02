@@ -24,7 +24,7 @@ const StyledNav = styled.nav`
       /* border: 1px solid black; */
       align-self: flex-start;
       font-size: 16px;
-      content: '↗'
+      /* content: '↗' */
     }
   }
 

@@ -7,8 +7,8 @@ import CardContainer from "./Technologies/CardContainer";
 const Work = (props) => {
   return (
     <StyledWork>
-      <h2 ref={props.refType}>Work</h2>
-      <WorkContainer />
+      <h2 ref={props.refType}></h2>
+      {/* <WorkContainer /> */}
       {/* <WorkContainer showExtraProjects={showExtraProjects} /> */}
       {/* buttons */}
       {/* {showExtraProjects ?

@@ -9,15 +9,15 @@ const Text = (props) => {
         <span className="punctuation">.</span>
       </h1>
       <p>
-        👉 Frontend Developer
+        👉 Web Developer
         <a
-          href="https://codeshock.dev/"
+          href="https://www.xenith.com/"
           target="_blank"
           rel="noreferrer"
           className="company"
         >
           {" "}
-          @Code Shock
+          @Xenith
         </a>
       </p>
 

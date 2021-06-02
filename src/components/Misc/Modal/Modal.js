@@ -1,13 +1,14 @@
 import React from "react";
-import StyledModal from "./StyledModal";
+import { ModalRoot } from "./StyledModal";
 
 import Nav from "../../Header/Nav/Nav";
+import Icons from "../../Header/Icons/Icons";
 
 const Modal = (props) => {
   const closeModal = () => props.toggleModal();
 
   return (
-    <StyledModal className="active">
+    <ModalRoot className="active">
       <div className="modal-header">
         <button className="close-button" onClick={closeModal}>
           &times;
@@ -18,7 +19,8 @@ const Modal = (props) => {
         closeModal={closeModal}
         icons
       />
-    </StyledModal>
+      <Icons />
+    </ModalRoot>
   );
 };
 

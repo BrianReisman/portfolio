@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledModal = styled.div`
+export const ModalRoot = styled.div`
   position: fixed;
   top: 50%; //centering magic
   left: 50%;
@@ -12,8 +12,8 @@ const StyledModal = styled.div`
   background-color: ${(props) => props.theme.color.white};
   width: 500px;
   max-width: 80%;
-  display: flex;///
-  flex-direction: column;///
+  display: flex; //
+  flex-direction: column; //
   nav {
     /* border: 3px solid blue; */
     margin: 15px;
@@ -28,7 +28,7 @@ const StyledModal = styled.div`
   .active {
     transform: translate(-50%, -50%) scale(1);
   }
-    /* border: 3px solid blue; */
+  /* border: 3px solid blue; */
   .modal-header {
     /* border: 3px solid blue; */
     padding: 10px 15px 0 15px;
@@ -46,8 +46,7 @@ const StyledModal = styled.div`
     font-size: ${(props) => props.theme.size.h4};
     font-weight: bold;
   }
-  .icons{
+  .icons {
     border: 2px solid pink;
   }
 `;
-export default StyledModal;
