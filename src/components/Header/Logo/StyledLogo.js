@@ -1,9 +1,8 @@
 import styled from "styled-components";
-// https://stackoverflow.com/questions/5209814/can-i-position-an-element-fixed-relative-to-parent //*With this I could need to move logo into App again...
 
 const StyledLogo = styled.div`
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 30px;
   /* margin: 10px 0 0 30px; */

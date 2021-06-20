@@ -5,7 +5,7 @@ import styled from "styled-components";
 const StyledWork = styled.div`
   /* border: 3px solid tomato; */
   
-  padding: 0px 15px 50px 100px; //TODO: use on all section
+  padding: 25px 15px; //TODO: use on all section
   background-color: ${(props) => props.theme.color.background};
   /* height: calc(100% + 100px); */
 

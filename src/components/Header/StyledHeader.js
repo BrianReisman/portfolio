@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const StyledHeader = styled.header`
   /* border: 1px solid black; */
+  /* height: 10vh; */
 
   /* position: relative; //allows logo to be positioned absolutely. Was for when logo was in header */
   top: 0;
@@ -12,9 +13,8 @@ const StyledHeader = styled.header`
   justify-content: center;
   align-items: stretch;
 
-@media(min-width: 1440px){
-  
-}
+  @media (min-width: 1440px) {
+  }
 
   /* border: 1px solid black; */
   @media (max-width: ${(props) => props.theme.breakpoints.mid}) {

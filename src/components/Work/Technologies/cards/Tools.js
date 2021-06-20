@@ -1,5 +1,4 @@
 import React from "react";
-import StyledTools from "./StyledTools";
 
 // import figma from "../../../../assets/Technologies/figma.svg";
 // import git from "../../../../assets/Technologies/git.svg";
@@ -15,7 +14,7 @@ import github from "../../../../assets/Technologies/Orange/GitHub-ORANGE.svg";
 
 const Tools = ({className}) => {
   return (
-    <StyledTools className={className}>
+    <div className={className}>
       <h4>Industry Tools:</h4>
       <section >
         <span>
@@ -31,7 +30,7 @@ const Tools = ({className}) => {
           <p>GitHub</p>
         </span>
       </section>
-    </StyledTools>
+    </div>
   );
 };
 

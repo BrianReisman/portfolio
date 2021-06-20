@@ -1,5 +1,4 @@
 import React from "react";
-import StyledFrontendCard from "./StyledFrontendCard";
 
 // logo SVGs - COLOR
 // import html from "../../../../assets/Technologies/html.svg";
@@ -26,7 +25,7 @@ import styledComponents from "../../../../assets/Technologies/Orange/Styled-Comp
 
 const FrontendCard = ({className}) => {
   return (
-    <StyledFrontendCard className={className}>
+    <div className={className}>
       <h4>Frontend:</h4>
       <section>
         <span>
@@ -57,7 +56,7 @@ const FrontendCard = ({className}) => {
           </p>
         </span>
       </section>
-    </StyledFrontendCard>
+    </div>
   );
 };
 

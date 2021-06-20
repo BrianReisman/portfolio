@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ConnectRoot = styled.div`
   /* border: 2px solid black; */
 
-  padding: 0px 15px 70px 100px; //TODO: use on all section
+  padding: 25px 15px;
 
   @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
     padding-left: 15px;

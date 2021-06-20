@@ -1,5 +1,4 @@
 import React from "react";
-import StyledBackendcard from "./StyledBackendcard";
 // import node from "../../../../assets/Technologies/node.svg";
 // import express from "../../../../assets/Technologies/express.svg";
 // import knex from "../../../../assets/Technologies/Vector.svg";
@@ -17,7 +16,7 @@ import sqlite from "../../../../assets/Technologies/Orange/SQLite3-ORANGE.svg";
 
 const Backendcard = ({ className }) => {
   return (
-    <StyledBackendcard className={className}>
+    <div className={className}>
       <h4>Backend:</h4>
       <section>
         <span>
@@ -37,7 +36,7 @@ const Backendcard = ({ className }) => {
           <p>SQLite</p>
         </span>
       </section>
-    </StyledBackendcard>
+    </div>
   );
 };
 
