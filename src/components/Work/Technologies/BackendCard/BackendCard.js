@@ -10,16 +10,16 @@ import StyledBackendcard from "./StyledBackendcard";
 // import knex from "../../../../assets/Technologies/blackAndWhite/Vector.svg";
 // import sqlite from "../../../../assets/Technologies/blackAndWhite/Component 3.svg";
 
-import node from "../../../../assets/Technologies/Orange/node-ORANGE.svg"
-import express from "../../../../assets/Technologies/Orange/express-ORANGE.svg"
-import knex from "../../../../assets/Technologies/Orange/Knex-ORANGE.svg"
-import sqlite from "../../../../assets/Technologies/Orange/SQLite3-ORANGE.svg"
+import node from "../../../../assets/Technologies/Orange/node-ORANGE.svg";
+import express from "../../../../assets/Technologies/Orange/express-ORANGE.svg";
+import knex from "../../../../assets/Technologies/Orange/Knex-ORANGE.svg";
+import sqlite from "../../../../assets/Technologies/Orange/SQLite3-ORANGE.svg";
 
-const Backendcard = (props) => {
+const Backendcard = ({ className }) => {
   return (
-    <StyledBackendcard>
+    <StyledBackendcard className={className}>
       <h4>Backend:</h4>
-      <div className="logos">
+      <section>
         <span>
           <img src={node} alt="NodeJS logo" />
           <p>NodeJS</p>
@@ -36,7 +36,7 @@ const Backendcard = (props) => {
           <img src={sqlite} alt="SQLite logo" />
           <p>SQLite</p>
         </span>
-      </div>
+      </section>
     </StyledBackendcard>
   );
 };

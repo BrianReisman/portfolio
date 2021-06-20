@@ -24,9 +24,9 @@ import react from "../../../../assets/Technologies/Orange/React-ORANGE.svg";
 import redux from "../../../../assets/Technologies/Orange/Redux-ORANGE.svg";
 import styledComponents from "../../../../assets/Technologies/Orange/Styled-Components-ORANGE.svg";
 
-const FrontendCard = (props) => {
+const FrontendCard = ({className}) => {
   return (
-    <StyledFrontendCard>
+    <StyledFrontendCard className={className}>
       <h4>Frontend:</h4>
       <section>
         <span>

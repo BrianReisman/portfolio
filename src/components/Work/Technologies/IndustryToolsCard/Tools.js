@@ -13,11 +13,11 @@ import figma from "../../../../assets/Technologies/Orange/Figma-ORANGE.svg";
 import git from "../../../../assets/Technologies/Orange/Git-ORANGE.svg";
 import github from "../../../../assets/Technologies/Orange/GitHub-ORANGE.svg";
 
-const Tools = (props) => {
+const Tools = ({className}) => {
   return (
-    <StyledTools>
+    <StyledTools className={className}>
       <h4>Industry Tools:</h4>
-      <div className="logos">
+      <section >
         <span>
           <img src={figma} alt="figma logo" />
           <p>Figma</p>
@@ -30,7 +30,7 @@ const Tools = (props) => {
           <img src={github} alt="github logo" />
           <p>GitHub</p>
         </span>
-      </div>
+      </section>
     </StyledTools>
   );
 };
