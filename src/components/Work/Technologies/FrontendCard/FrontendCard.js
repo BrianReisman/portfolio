@@ -28,7 +28,7 @@ const FrontendCard = (props) => {
   return (
     <StyledFrontendCard>
       <h4>Frontend:</h4>
-      <div className="logos">
+      <section>
         <span>
           <img src={html} alt="html logo" />
           <p>HTML</p>
@@ -56,7 +56,7 @@ const FrontendCard = (props) => {
             Components
           </p>
         </span>
-      </div>
+      </section>
     </StyledFrontendCard>
   );
 };
