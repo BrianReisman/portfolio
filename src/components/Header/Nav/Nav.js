@@ -4,8 +4,6 @@ import PDF from "../../../assets/Brian Reisman - Resume.pdf";
 // import Icons from "../../Header/Icons/Icons";
 
 const Nav = (props) => {
-  console.log(props)
-
   return (
     <StyledNav>
       <button onClick={props.scrollClickHandler} className="work">
