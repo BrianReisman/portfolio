@@ -16,14 +16,20 @@ const CopyableCode = styled.input`
     Menlo, monospace;
   max-height: 28px;
   width: 50%;
-  /* overflow: none; */
 
-  /* -webkit-user-select: all; for Safari */
-  /* user-select: all; */
+  :focus {
+    border: 1px solid tomato;
+  }
 `;
 
-const url = "https://iwantedbrian.com/api/resume";
+const onClickSelect = ({ target: { id } }) => {
+  const inputEl = document.getElementById(id);
+  inputEl.focus();
+  inputEl.select();
+};
 
-const copycode = () => <CopyableCode value={url} readOnly data-autoselect />;
+const copycode = ({ url }) => (
+  <CopyableCode id="apiEndpoint" onClick={onClickSelect} value={url} readOnly />
+);
 
 export default copycode;

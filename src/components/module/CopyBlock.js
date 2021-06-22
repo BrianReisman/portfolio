@@ -13,11 +13,15 @@ const Module = styled.div`
   }
 `;
 
+const url = "https://iwantedbrian.com/api/resume";
+
+const onClickCopy = () => navigator.clipboard.writeText(url);
+
 const CopyBlock = (props) => {
   return (
     <Module>
-      <CopyableCode />
-      <CopyIcon />
+      <CopyableCode url={url} />
+      <CopyIcon onClickCopy={onClickCopy} url={url} />
     </Module>
   );
 };
