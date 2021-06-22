@@ -1,9 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const CopyableCode = styled.input`
-  /* margin: 14px 0 14px 14px; */
-
   cursor: text;
   font-size: 16px;
   box-sizing: border-box;
@@ -12,14 +10,23 @@ const CopyableCode = styled.input`
   border: 1px solid #ccc;
   border-radius: 6px 0 0 6px;
   /*/// TODO: import ui=monospace */
-  font-family: ui-monospace, SFMono-Regular, SF Mono, Consolas, Liberation Mono,
-    Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Consolas, Liberation Mono, Menlo, monospace;
   max-height: 28px;
-  width: 50%;
+  width: 70%;
+  background-color: #fafbfc;
 
   :focus {
     border: 1px solid tomato;
   }
+
+  ::-moz-selection {
+    background-color: #4444a440;
+  }
+  ::selection {
+    background-color: #4444a440;
+  }
+
+  /* border: 1px solid blue; */
 `;
 
 const onClickSelect = ({ target: { id } }) => {

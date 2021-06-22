@@ -1,6 +1,7 @@
-import React from "react";
-import StyledNav from "./StyledNav";
-import PDF from "../../../assets/Brian Reisman - Resume.pdf";
+import React from 'react';
+import StyledNav from './StyledNav';
+import PDF from '../../../assets/Brian Reisman - Resume.pdf';
+import { BsCaretDown, BsBoxArrowUpRight } from 'react-icons/bs';
 // import Icons from "../../Header/Icons/Icons";
 
 const Nav = (props) => {
@@ -17,6 +18,8 @@ const Nav = (props) => {
       </button>
       <a href={PDF} target="_blank" rel="noreferrer">
         Resume
+        <BsCaretDown />
+        <BsBoxArrowUpRight />
       </a>
       {/* {props.icons && <Icons />} */}
     </StyledNav>

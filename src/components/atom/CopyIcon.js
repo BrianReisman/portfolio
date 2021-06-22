@@ -11,8 +11,8 @@ const Icon = styled.div`
   background-color: #fafbfc;
   color: #6a737d;
   outline: none;
-  border: 1px solid #1b1f2326; //*
-  border-left: none;
+  border: 1px solid ${({ clicked }) => (clicked ? '#9be9a8' : '#1b1f2326')}; //*
+  border-left: ${({ clicked }) => (clicked ? null : 'none')};
   border-radius: 0 6px 6px 0;
   max-height: 28px;
   width: 45px;
@@ -25,7 +25,7 @@ const Icon = styled.div`
   transition-property: color, background-color, border-color;
   :hover {
     background-color: #f3f4f6;
-    border-color: #1b1f2326;
+    border-color: ${({ clicked }) => (clicked ? '#9be9a8' : '#1b1f2326')};
     transition-duration: 0.1s;
   }
 `;
@@ -48,7 +48,9 @@ const CopyIcon = ({ onClickCopy }) => {
   };
 
   return (
-    <Icon onClick={clickHandler}>{clicked ? <FcCheckmark /> : <BsClipboard role="button" />}</Icon>
+    <Icon onClick={clickHandler} clicked={clicked}>
+      {clicked ? <FcCheckmark /> : <BsClipboard role="button" />}
+    </Icon>
   );
 };
 

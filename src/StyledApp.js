@@ -13,7 +13,7 @@ const StyledApp = styled.div`
 
   /* global styles */
   p {
-    font-size: ${(props) => props.theme.size.small};
+    /* font-size: ${(props) => props.theme.size.small}; */
   }
   a {
     text-decoration: none;
