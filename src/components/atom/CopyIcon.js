@@ -4,6 +4,10 @@ import { FcCheckmark } from 'react-icons/fc';
 import styled from 'styled-components';
 
 const Icon = styled.div`
+  *, *::before, *::after{
+    box-sizing: border-box;
+  }
+
   svg {
     height: 16px;
     width: 16px;
@@ -28,11 +32,6 @@ const Icon = styled.div`
     border-color: ${({ clicked }) => (clicked ? '#9be9a8' : '#1b1f2326')};
     transition-duration: 0.1s;
   }
-`;
-
-const CopiedMessage = styled.div`
-  color: green;
-  font-size: 12px;
 `;
 
 const CopyIcon = ({ onClickCopy }) => {
