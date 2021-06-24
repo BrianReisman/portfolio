@@ -12,7 +12,7 @@ import Me from "./components/Me/Me";
 import Connect from "./components/Connect/Connect";
 import Footer from "./components/Footer/Footer";
 import Modal from "./components/Misc/Modal/Modal";
-import CopyBlock from "./components/module/CopyBlock";
+import GitHubMock from "./components/module/GitHubMock";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -69,7 +69,7 @@ function App() {
         headerRef={headerRef}
         toggleModal={toggleModal}
       />
-      <CopyBlock />
+      <GitHubMock />
       <Hero />
       <Spacer />
       <Work refType={workRef} />
