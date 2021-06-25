@@ -1,24 +1,26 @@
 import React from 'react';
-import StyledNav from './StyledNav';
+import { NavRoot, Button } from './Nav.elements';
 import { BsCaretDown } from 'react-icons/bs';
+import { HiDownload } from 'react-icons/hi';
 
 const Nav = (props) => {
   return (
-    <StyledNav>
-      <button onClick={props.scrollClickHandler} className="work">
+    <NavRoot>
+      <Button onClick={props.scrollClickHandler} className="work">
         Work
-      </button>
-      <button onClick={props.scrollClickHandler} className="me">
+      </Button>
+      <Button onClick={props.scrollClickHandler} className="me">
         Me
-      </button>
-      <button onClick={props.scrollClickHandler} className="connect">
+      </Button>
+      <Button onClick={props.scrollClickHandler} className="connect">
         Connect
-      </button>
-      <button>
+      </Button>
+      <Button>
+        <HiDownload className='test'/>
         Resume
         <BsCaretDown />
-      </button>
-    </StyledNav>
+      </Button>
+    </NavRoot>
   );
 };
 

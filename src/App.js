@@ -65,7 +65,7 @@ function App() {
         headerRef={headerRef}
         toggleModal={toggleModal}
       />
-      <Nav />
+      <Nav scrollClickHandler={scrollClickHandler} />
       <GitHubMock />
       <Hero />
       <Spacer />
