@@ -17,6 +17,25 @@ const Module = styled.div`
     padding: 16px;
   } */
   width: 360px;
+  :before,
+  :after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 0px;
+  }
+  :before {
+    border: 8px solid #00000000;
+    border-bottom: 8px solid #e1e4e8;
+    left: 330px;
+    top: -17px;
+  }
+  :after {
+    border: 8px solid #00000000;
+    border-bottom: 8px solid white;
+    left: 330px;
+    top: -328px;
+  }
 `;
 
 const CopyBar = styled.div`
