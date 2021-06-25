@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import CopyIcon from '../atom/CopyIcon';
 import CopyCodeInput from '../atom/CopyCodeInput';
+import { FiExternalLink, FiDownload } from 'react-icons/fi';
+import PDF from '../../assets/Brian Reisman - Resume.pdf';
 
 const Module = styled.div`
   border: 1px solid #e1e4e8;
@@ -11,10 +13,10 @@ const Module = styled.div`
 
   display: flex;
   flex-direction: column;
-  /* * > {
+  /* * > { //*apply to all in one place?
     padding: 16px;
   } */
-  width: 500px;
+  width: 360px;
 `;
 
 const CopyBar = styled.div`
@@ -46,11 +48,26 @@ const Text = styled.p`
 `;
 
 const Copy = styled.div`
-  border-bottom: 1px solid #e1e4e8;
   padding: 16px; //get this on all three sections from parent
 `;
-const ViewPDF = styled.div``;
-const DownloadPDF = styled.div``;
+
+const ResumeLinks = styled.a`
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-top: 1px solid #e1e4e8;
+  font-size: 14px;
+  font-weight: 600;
+  color: #24292e;
+  svg {
+    height: 16px;
+    width: 16px;
+    margin-right: 16px;
+  }
+  :hover {
+    background-color: #f6f8fa;
+  }
+`;
 
 const url = 'https://vercel-api-ii.vercel.app/api/resume';
 
@@ -69,8 +86,16 @@ const CopyBlock = (props) => {
           Insomnia gal? Plain ol' browser? You know what to do.
         </Text>
       </Copy>
-      <ViewPDF>asdf</ViewPDF>
-      <DownloadPDF>asdf</DownloadPDF>
+
+      <ResumeLinks href={PDF} target="_blank" rel="noreferrer">
+        <FiExternalLink />
+        Open Resume in a New Tab
+      </ResumeLinks>
+
+      <ResumeLinks href={PDF} download>
+        <FiDownload />
+        Download PDF Resume
+      </ResumeLinks>
     </Module>
   );
 };
