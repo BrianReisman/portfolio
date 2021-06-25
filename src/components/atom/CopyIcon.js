@@ -4,9 +4,9 @@ import { FcCheckmark } from 'react-icons/fc';
 import styled from 'styled-components';
 
 const Icon = styled.div`
-  /* *, *::before, *::after{
+  *, *::before, *::after{
     box-sizing: border-box;
-  } */
+  }
   svg {
     height: 16px;
     width: 16px;

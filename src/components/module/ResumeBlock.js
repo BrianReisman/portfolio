@@ -9,11 +9,15 @@ import { GoTerminal } from 'react-icons/go';
 import PDF from '../../assets/Brian Reisman - Resume.pdf';
 
 const Module = styled.div`
+  position: relative;
+  top: 150px;
+  right: 375px;
+  background-color: white;
   border: 1px solid #e1e4e8;
   border-radius: 6px;
   margin: 5px;
 
-  display: flex;
+  display: ${(props) => (props.showDropDown ? 'flex' : 'none')};
   flex-direction: column;
   width: 360px;
   /* * > { //*apply to all in one place?
@@ -31,16 +35,16 @@ const Module = styled.div`
     border-bottom: 8px solid #e1e4e8;
     /* border-bottom: 8px solid teal; */
     left: 330px;
-    top: 62px;
+    top: -15px;
   }
   /* ///!!! caution for breakpoints !!!// */
   :after {
     border: 8px solid #00000000;
-    border-bottom: 8px solid whitesmoke;
+    border-bottom: 8px solid white;
     /* border-bottom: 8px solid red; */
     z-index: 1;
     left: 330px;
-    top: 64px;
+    top: -13px;
   }
 `;
 
@@ -112,9 +116,9 @@ const url = 'https://vercel-api-ii.vercel.app/api/resume';
 
 const onClickCopy = () => navigator.clipboard.writeText(url);
 
-const ResumeBlock = (props) => {
+const ResumeDropDown = ({ showDropDown }) => {
   return (
-    <Module>
+    <Module showDropDown={showDropDown}>
       <ResumeLinks href={PDF} target="_blank" rel="noreferrer">
         <FiExternalLink />
         Open Resume in a New Tab
@@ -146,6 +150,6 @@ const ResumeBlock = (props) => {
   );
 };
 
-export default ResumeBlock;
+export default ResumeDropDown;
 
 // TODO figure out the extra bottom padding below Download PDF Resume
