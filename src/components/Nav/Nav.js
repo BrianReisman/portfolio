@@ -1,8 +1,6 @@
 import React from 'react';
 import StyledNav from './StyledNav';
-import PDF from '../../../assets/Brian Reisman - Resume.pdf';
-import { BsCaretDown, BsBoxArrowUpRight } from 'react-icons/bs';
-// import Icons from "../../Header/Icons/Icons";
+import { BsCaretDown } from 'react-icons/bs';
 
 const Nav = (props) => {
   return (
@@ -16,12 +14,10 @@ const Nav = (props) => {
       <button onClick={props.scrollClickHandler} className="connect">
         Connect
       </button>
-      <a href={PDF} target="_blank" rel="noreferrer">
+      <button>
         Resume
         <BsCaretDown />
-        <BsBoxArrowUpRight />
-      </a>
-      {/* {props.icons && <Icons />} */}
+      </button>
     </StyledNav>
   );
 };

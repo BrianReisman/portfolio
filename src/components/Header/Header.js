@@ -1,7 +1,7 @@
 import React from "react";
 
 import StyledHeader from "./StyledHeader";
-import Nav from "./Nav/Nav";
+// import Nav from "./Nav/Nav";
 import Logo from "./Logo/Logo";
 import Hamburger from "./Hamburger/Hamburger";
 import Icons from "./Icons/Icons";
@@ -15,7 +15,7 @@ const Header = (props) => {
     <StyledHeader ref={props.headerRef}>
       <Logo scrollClickHandler={props.scrollClickHandler}/>
       <Hamburger onClick={clickHandler} />
-      <Nav scrollClickHandler={props.scrollClickHandler} />
+      {/* <Nav scrollClickHandler={props.scrollClickHandler} /> */}
       <Icons />
     </StyledHeader>
   );

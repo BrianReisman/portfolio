@@ -1,7 +1,7 @@
 import React from "react";
 import { ModalRoot } from "./StyledModal";
 
-import Nav from "../../Header/Nav/Nav";
+import Nav from "../../Nav/Nav";
 import Icons from "../../Header/Icons/Icons";
 
 const Modal = (props) => {

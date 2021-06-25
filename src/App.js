@@ -1,18 +1,19 @@
-import { useRef, useState } from "react";
+import { useRef, useState } from 'react';
 
-import "./App.css";
+import './App.css';
 
 //components
-import Header from "./components/Header/Header";
-import StyledApp from "./StyledApp";
-import Hero from "./components/Hero/Hero";
-import Spacer from "./components/Misc/Spacer";
-import Work from "./components/Work/Work";
-import Me from "./components/Me/Me";
-import Connect from "./components/Connect/Connect";
-import Footer from "./components/Footer/Footer";
-import Modal from "./components/Misc/Modal/Modal";
-import GitHubMock from "./components/module/GitHubMock";
+import Header from './components/Header/Header';
+import StyledApp from './StyledApp';
+import Hero from './components/Hero/Hero';
+import Spacer from './components/Misc/Spacer';
+import Work from './components/Work/Work';
+import Me from './components/Me/Me';
+import Connect from './components/Connect/Connect';
+import Footer from './components/Footer/Footer';
+import Modal from './components/Misc/Modal/Modal';
+import GitHubMock from './components/module/GitHubMock';
+import Nav from './components/Nav/Nav';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -28,11 +29,11 @@ function App() {
 
   const scrollClickHandler = (e) => {
     let section =
-      e.target.className === "work"
+      e.target.className === 'work'
         ? workRef
-        : e.target.className === "me"
+        : e.target.className === 'me'
         ? meRef
-        : e.target.className === "connect"
+        : e.target.className === 'connect'
         ? connectRef
         : headerRef;
 
@@ -45,10 +46,10 @@ function App() {
 
     if (section === headerRef) {
       //* Keep this specifically for mobile
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     } else {
       const yAxis = section.current.getBoundingClientRect().top;
-      window.scrollBy({ top: yAxis - offsetVal, letf: 0, behavior: "smooth" });
+      window.scrollBy({ top: yAxis - offsetVal, letf: 0, behavior: 'smooth' });
     }
 
     if (showModal) {
@@ -58,17 +59,13 @@ function App() {
 
   return (
     <StyledApp>
-      {showModal && (
-        <Modal
-          scrollClickHandler={scrollClickHandler}
-          toggleModal={toggleModal}
-        />
-      )}
+      {showModal && <Modal scrollClickHandler={scrollClickHandler} toggleModal={toggleModal} />}
       <Header
         scrollClickHandler={scrollClickHandler}
         headerRef={headerRef}
         toggleModal={toggleModal}
       />
+      <Nav />
       <GitHubMock />
       <Hero />
       <Spacer />
