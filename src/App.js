@@ -12,7 +12,7 @@ import Me from './components/Me/Me';
 import Connect from './components/Connect/Connect';
 import Footer from './components/Footer/Footer';
 import Modal from './components/Misc/Modal/Modal';
-import GitHubMock from './components/module/GitHubMock';
+import ResumeBlock from './components/module/ResumeBlock';
 import Nav from './components/Nav/Nav';
 
 function App() {
@@ -66,7 +66,7 @@ function App() {
         toggleModal={toggleModal}
       />
       <Nav scrollClickHandler={scrollClickHandler} />
-      <GitHubMock />
+      <ResumeBlock />
       <Hero />
       <Spacer />
       <Work refType={workRef} />

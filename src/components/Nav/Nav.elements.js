@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const NavRoot = styled.nav`
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import CopyIcon from '../atom/CopyIcon';
 import CopyCodeInput from '../atom/CopyCodeInput';
 import { FiExternalLink, FiDownload } from 'react-icons/fi';
+import { GoTerminal } from 'react-icons/go';
+
 import PDF from '../../assets/Brian Reisman - Resume.pdf';
 
 const Module = styled.div`
@@ -13,28 +15,32 @@ const Module = styled.div`
 
   display: flex;
   flex-direction: column;
+  width: 360px;
   /* * > { //*apply to all in one place?
     padding: 16px;
   } */
-  width: 360px;
   :before,
   :after {
     content: '';
     display: inline-block;
-    position: relative;
+    position: absolute;
     width: 0px;
   }
   :before {
     border: 8px solid #00000000;
     border-bottom: 8px solid #e1e4e8;
+    /* border-bottom: 8px solid teal; */
     left: 330px;
-    top: -17px;
+    top: 62px;
   }
+  /* ///!!! caution for breakpoints !!!// */
   :after {
     border: 8px solid #00000000;
-    border-bottom: 8px solid white;
+    border-bottom: 8px solid whitesmoke;
+    /* border-bottom: 8px solid red; */
+    z-index: 1;
     left: 330px;
-    top: -328px;
+    top: 64px;
   }
 `;
 
@@ -46,9 +52,7 @@ const CopyBar = styled.div`
 `;
 
 const Text = styled.p`
-  /* border: 1px solid #fe4; */
-  /* box-sizing: border-box; */
-
+  box-sizing: border-box;
   width: 100%;
   line-height: 1.2;
   font-size: 12px;
@@ -68,16 +72,22 @@ const Text = styled.p`
 
 const Copy = styled.div`
   padding: 16px; //get this on all three sections from parent
+  svg {
+    height: 16px;
+    width: 16px;
+    margin-right: 16px;
+  }
 `;
 
 const ResumeLinks = styled.a`
   display: flex;
   align-items: center;
-  padding: 16px;
-  border-top: 1px solid #e1e4e8;
+  border-bottom: 1px solid #e1e4e8;
   font-size: 14px;
   font-weight: 600;
   color: #24292e;
+  padding: 16px;
+
   svg {
     height: 16px;
     width: 16px;
@@ -88,24 +98,23 @@ const ResumeLinks = styled.a`
   }
 `;
 
+const JSONHeading = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0 0 16px 0;
+  font-size: 14px;
+  font-weight: 600;
+
+  /* border: 1px solid gold; */
+`;
+
 const url = 'https://vercel-api-ii.vercel.app/api/resume';
 
 const onClickCopy = () => navigator.clipboard.writeText(url);
 
-const CopyBlock = (props) => {
+const ResumeBlock = (props) => {
   return (
     <Module>
-      <Copy>
-        <CopyBar>
-          <CopyCodeInput url={url} />
-          <CopyIcon onClickCopy={onClickCopy} url={url} />
-        </CopyBar>
-        <Text>
-          If you're more JSON inclined, feel free to <code>get</code> my resume here. Postman guy?
-          Insomnia gal? Plain ol' browser? You know what to do.
-        </Text>
-      </Copy>
-
       <ResumeLinks href={PDF} target="_blank" rel="noreferrer">
         <FiExternalLink />
         Open Resume in a New Tab
@@ -115,8 +124,28 @@ const CopyBlock = (props) => {
         <FiDownload />
         Download PDF Resume
       </ResumeLinks>
+
+      <Copy>
+        {/* //TODO add icon and font weight 500 here also */}
+        <div>
+          <JSONHeading>
+            <GoTerminal />
+            JSON Resume API
+          </JSONHeading>
+        </div>
+        <CopyBar>
+          <CopyCodeInput url={url} />
+          <CopyIcon onClickCopy={onClickCopy} url={url} />
+        </CopyBar>
+        <Text>
+          If you're more JSON inclined, feel free to <code>get</code> my resume here. Postman guy?
+          Insomnia gal? Plain ol' browser? You know what to do.
+        </Text>
+      </Copy>
     </Module>
   );
 };
 
-export default CopyBlock;
+export default ResumeBlock;
+
+// TODO figure out the extra bottom padding below Download PDF Resume

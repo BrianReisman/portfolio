@@ -10,6 +10,7 @@ const Icon = styled.div`
   svg {
     height: 16px;
     width: 16px;
+    margin-right: 0;
   }
   display: flex;
   align-items: center;
