@@ -1,7 +1,7 @@
 import React from "react";
 
 import StyledHeader from "./StyledHeader";
-import Nav from "./Nav/Nav";
+import Nav from "../Nav/Nav";
 import Logo from "./Logo/Logo";
 import Hamburger from "./Hamburger/Hamburger";
 import Icons from "./Icons/Icons";
