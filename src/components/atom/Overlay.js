@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const StyledOverlay = styled.div`
   background-color: #11111160;
   display: ${(props) => {
-    console.log(props);
     return props.showDropDown ? 'absolute' : 'none';
   }};
   height: 100%;

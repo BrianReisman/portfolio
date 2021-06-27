@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
   justify-content: center;
   align-items: stretch;
 
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
 `;
 export default StyledHeader;
