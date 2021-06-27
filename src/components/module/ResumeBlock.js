@@ -9,7 +9,8 @@ import { GoTerminal } from 'react-icons/go';
 import PDF from '../../assets/Brian Reisman - Resume.pdf';
 
 const Module = styled.div`
-  position: relative;
+  z-index: 10;
+  position: absolute;
   top: 150px;
   right: 375px;
   background-color: white;
@@ -34,6 +35,7 @@ const Module = styled.div`
     border: 8px solid #00000000;
     border-bottom: 8px solid #e1e4e8;
     /* border-bottom: 8px solid teal; */
+    z-index: 1;
     left: 330px;
     top: -15px;
   }
@@ -42,7 +44,7 @@ const Module = styled.div`
     border: 8px solid #00000000;
     border-bottom: 8px solid white;
     /* border-bottom: 8px solid red; */
-    z-index: 1;
+    z-index: 2;
     left: 330px;
     top: -13px;
   }
@@ -116,17 +118,19 @@ const url = 'https://vercel-api-ii.vercel.app/api/resume';
 
 const onClickCopy = () => navigator.clipboard.writeText(url);
 
-const ResumeDropDown = ({ showDropDown }) => {
+const ResumeDropDown = ({ showDropDown, setShowDropDown }) => {
   return (
-    <Module showDropDown={showDropDown}>
+    // <Module showDropDown={showDropDown}>
+    <Module showDropDown={showDropDown} onClick={() => setShowDropDown(!showDropDown)}>
       <ResumeLinks href={PDF} target="_blank" rel="noreferrer">
         <FiExternalLink />
         Open Resume in a New Tab
       </ResumeLinks>
 
+      {/* <ResumeLinks href={PDF} download onClick={() => setShowDropDown(!showDropDown)}> */}
       <ResumeLinks href={PDF} download>
         <FiDownload />
-        Download PDF Resume
+        Download PDF
       </ResumeLinks>
 
       <Copy>

@@ -21,14 +21,18 @@ export const Button = styled.button`
   cursor: pointer;
   background-color: ${(props) => props.theme.color.white};
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 
   /* svg { */
     /* height: 24px; */
     /* width: 24px; */
   /* } */
   .test {
-    color: black;
+    /* border: 1px solid red; */
+    color: #ccc;
+    height: 12px;
+    width: 12px;
+    padding: 0.5rem;
   }
 
   /* border: 1px solid blue; */

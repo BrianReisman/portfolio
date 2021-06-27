@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { NavRoot, Button } from './Nav.elements';
 import { BsCaretDown } from 'react-icons/bs';
-import { HiDownload } from 'react-icons/hi';
-import ResumeDropDown from '../module/ResumeBlock';
+import ResumeBlock from '../module/ResumeBlock';
+import { Overlay } from '../atom/Overlay';
 
 const Nav = (props) => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -22,12 +22,16 @@ const Nav = (props) => {
       <Button onClick={props.scrollClickHandler} className="connect">
         Connect
       </Button>
+
       <Button className="dropdown" onClick={toggleDropDown}>
-        <HiDownload className="test" />
         Resume
-        <BsCaretDown />
+        <BsCaretDown className="test" />
       </Button>
-        <ResumeDropDown showDropDown={showDropDown} />
+      <ResumeBlock showDropDown={showDropDown} setShowDropDown={setShowDropDown} />
+      <Overlay
+        showDropDown={showDropDown}
+        setShowDropDown={setShowDropDown}
+      />
     </NavRoot>
   );
 };

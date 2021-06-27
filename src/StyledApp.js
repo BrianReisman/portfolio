@@ -45,10 +45,10 @@ const StyledApp = styled.div`
     pointer-events: all;
   }
 
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
     p {
       font-size: ${(props) => props.theme.size.small1024};
     }
-  }
+  } */
 `;
 export default StyledApp;
