@@ -11,8 +11,8 @@ import PDF from '../../assets/Brian Reisman - Resume.pdf';
 const Module = styled.div`
   z-index: 10;
   position: absolute;
-  top: 150px;
-  right: 375px;
+  top: 50px;
+  right: 0;
   background-color: white;
   border: 1px solid #e1e4e8;
   border-radius: 6px;

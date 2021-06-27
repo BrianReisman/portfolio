@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NavRoot = styled.nav`
   /* border: 1px solid blue; */
-  
+  position: relative; //for absolute placement of menu dropdown to respect parent.
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,8 +24,8 @@ export const Button = styled.button`
   align-items: flex-end;
 
   /* svg { */
-    /* height: 24px; */
-    /* width: 24px; */
+  /* height: 24px; */
+  /* width: 24px; */
   /* } */
   .test {
     /* border: 1px solid red; */
