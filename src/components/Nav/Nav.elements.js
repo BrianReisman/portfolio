@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 export const NavRoot = styled.nav`
   /* border: 1px solid blue; */
+
   position: relative; //for absolute placement of menu dropdown to respect parent.
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-self: center;
   width: 50%;
-  margin: 0 auto;
+  margin-right: 1rem;
 `;
 
 export const Button = styled.button`

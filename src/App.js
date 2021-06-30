@@ -12,8 +12,10 @@ import Me from './components/Me/Me';
 import Connect from './components/Connect/Connect';
 import Footer from './components/Footer/Footer';
 import Modal from './components/Misc/Modal/Modal';
+import { Overlay } from './components/atom/Overlay';
 
 function App() {
+  const [showDropDown, setShowDropDown] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
@@ -62,6 +64,8 @@ function App() {
         scrollClickHandler={scrollClickHandler}
         headerRef={headerRef}
         toggleModal={toggleModal}
+        showDropDown={showDropDown}
+        setShowDropDown={setShowDropDown}
       />
       <Hero />
       <Spacer />
@@ -80,6 +84,7 @@ function App() {
           }}
         ></div>
       )}
+      <Overlay showDropDown={showDropDown} setShowDropDown={setShowDropDown} />
     </StyledApp>
   );
 }

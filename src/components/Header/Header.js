@@ -1,22 +1,26 @@
-import React from "react";
+import React from 'react';
 
-import StyledHeader from "./StyledHeader";
-import Nav from "../Nav/Nav";
-import Logo from "./Logo/Logo";
-import Hamburger from "./Hamburger/Hamburger";
-import Icons from "./Icons/Icons";
+import StyledHeader from './StyledHeader';
+import Nav from '../Nav/Nav';
+import Logo from './Logo/Logo';
+import Hamburger from './Hamburger/Hamburger';
+// import Icons from './Icons/Icons';
 
-const Header = (props) => {
+const Header = ({ showDropDown, setShowDropDown, toggleModal, headerRef, scrollClickHandler }) => {
   const clickHandler = () => {
-    props.toggleModal()
+    toggleModal();
   };
 
   return (
-    <StyledHeader ref={props.headerRef}>
-      <Logo scrollClickHandler={props.scrollClickHandler}/>
+    <StyledHeader ref={headerRef}>
+      <Logo scrollClickHandler={scrollClickHandler} />
       <Hamburger onClick={clickHandler} />
-      <Nav scrollClickHandler={props.scrollClickHandler} />
-      <Icons />
+      <Nav
+        scrollClickHandler={scrollClickHandler}
+        showDropDown={showDropDown}
+        setShowDropDown={setShowDropDown}
+      />
+      {/* <Icons /> */}
     </StyledHeader>
   );
 };

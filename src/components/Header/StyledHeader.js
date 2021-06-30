@@ -4,15 +4,12 @@ const StyledHeader = styled.header`
   /* border: 1px solid black; */
   /* height: 10vh; */
 
-  top: 0;
   background-color: ${(props) => props.theme.color.white};
   padding-top: 20px;
   padding-bottom: 15px;
   display: flex;
-  justify-content: center;
-  align-items: stretch;
-
-  /* border: 1px solid black; */
-
+  /* flex-direction: column; */
+  justify-content: space-between; //! not working
+  align-items: center;
 `;
 export default StyledHeader;
