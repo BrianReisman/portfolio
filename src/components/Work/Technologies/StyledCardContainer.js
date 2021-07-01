@@ -11,10 +11,10 @@ const StyledCardContainer = styled.div`
   .eachCard {
     background-color: ${(props) => props.theme.color.background};
     box-shadow: -9px 15px 40px rgba(0, 0, 0, 0.25);
-    border-radius: 32px;
+    border-radius: 24px;
     padding: 10px;
-    width: 400px;
-    margin: 20px;
+    width: 300px;
+    margin: 10px;
 
     section {
       /* border: 1px solid red;
@@ -27,7 +27,7 @@ const StyledCardContainer = styled.div`
       grid-gap: 0px; //replaces both grid-row-gap + grid-column-gap
       /* auto-fill == "get as many columns as I can get in" */
       /* As soon as you add widths to flex0box */
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
       grid-template-rows: auto; //explicit, not needed, (default)
     }
   }

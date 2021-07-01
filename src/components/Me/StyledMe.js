@@ -29,8 +29,5 @@ const StyledMe = styled.div`
     }
   } */
 
-  @media (max-width: ${(props) => props.theme.breakpoints.mid}) {
-    padding-left: 15px;
-  }
 `;
 export default StyledMe;
