@@ -9,6 +9,10 @@ export const NavRoot = styled.nav`
   align-items: center;
   margin-right: 2rem;
 
+  .dropdown:hover{
+    text-decoration: underline;
+  }
+
   @media (max-width: 600px){
     display: none;
   }
@@ -24,19 +28,20 @@ export const Button = styled.button`
   cursor: pointer;
   background-color: ${(props) => props.theme.color.white};
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 
-  /* svg { */
-  /* height: 24px; */
-  /* width: 24px; */
-  /* } */
-  .test {
-    /* border: 1px solid red; */
-    color: #ccc;
-    height: 12px;
-    width: 12px;
+  .downArrow {
+    /* border: 1px solid red;
+    color: #aaa;
+    height: 100%;
+    position: relative;
+    width: 50%; */
+    height: 16px;
+    width: 16px;
     padding: 0.5rem;
   }
+
+
 
   /* border: 1px solid blue; */
 `;

@@ -22,7 +22,7 @@ const Nav = ({ scrollClickHandler, showDropDown, setShowDropDown }) => {
 
       <Button className="dropdown" onClick={toggleDropDown}>
         Resume
-        <BsCaretDown className="test" />
+        <BsCaretDown className="downArrow" />
       </Button>
       <ResumeBlock showDropDown={showDropDown} setShowDropDown={setShowDropDown} />
     </NavRoot>
