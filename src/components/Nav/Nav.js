@@ -10,8 +10,8 @@ const Nav = ({ scrollClickHandler, showDropDown, setShowDropDown }) => {
 
   return (
     <NavRoot>
-      <Button onClick={scrollClickHandler} className="work">
-        Work
+      <Button onClick={scrollClickHandler} className="stack">
+        Stack
       </Button>
       <Button onClick={scrollClickHandler} className="me">
         Me

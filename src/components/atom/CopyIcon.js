@@ -7,7 +7,7 @@ const Icon = styled.div`
   *, *::before, *::after{
     box-sizing: border-box;
   }
-  svg {
+  svg, #check, #board {
     height: 16px;
     width: 16px;
     margin-right: 0;
@@ -31,6 +31,7 @@ const Icon = styled.div`
     border-color: ${({ clicked }) => (clicked ? '#9be9a8' : '#1b1f2326')};
     transition-duration: 0.1s;
   }
+
 `;
 
 const CopyIcon = ({ onClickCopy }) => {
@@ -47,7 +48,7 @@ const CopyIcon = ({ onClickCopy }) => {
 
   return (
     <Icon onClick={clickHandler} clicked={clicked}>
-      {clicked ? <FcCheckmark /> : <BsClipboard role="button" />}
+      {clicked ? <FcCheckmark id="check"/> : <BsClipboard role="button" id="board"/>}
     </Icon>
   );
 };

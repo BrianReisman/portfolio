@@ -7,7 +7,7 @@ import CardContainer from "./Technologies/CardContainer";
 const Work = (props) => {
   return (
     <StyledWork>
-      <h2 ref={props.refType}>Work</h2>
+      <h2 ref={props.refType}>Stack</h2>
       {/* <WorkContainer /> */}
       {/* <WorkContainer showExtraProjects={showExtraProjects} /> */}
       {/* buttons */}
@@ -18,7 +18,7 @@ const Work = (props) => {
         <button onClick={clickHandler}>See two more projects</button>
       )} */}
       <StyledTechnologies>
-        <h3>Technologies</h3>
+        {/* <h3>Technologies</h3> */}
         <CardContainer />
       </StyledTechnologies>
     </StyledWork>

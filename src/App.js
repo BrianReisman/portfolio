@@ -28,12 +28,14 @@ function App() {
   const headerRef = useRef(null);
 
   const scrollClickHandler = (e) => {
+    const splitClassNames = e.target.className.split(' ')
+    const className = splitClassNames[splitClassNames.length -1]
     let section =
-      e.target.className === 'work'
+      className === 'stack'
         ? workRef
-        : e.target.className === 'me'
+        : className === 'me'
         ? meRef
-        : e.target.className === 'connect'
+        : className === 'connect'
         ? connectRef
         : headerRef;
 

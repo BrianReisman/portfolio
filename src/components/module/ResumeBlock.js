@@ -120,15 +120,18 @@ const onClickCopy = () => navigator.clipboard.writeText(url);
 
 const ResumeDropDown = ({ showDropDown, setShowDropDown }) => {
   return (
-    // <Module showDropDown={showDropDown}>
-    <Module showDropDown={showDropDown} onClick={() => setShowDropDown(!showDropDown)}>
-      <ResumeLinks href={PDF} target="_blank" rel="noreferrer">
+    <Module showDropDown={showDropDown}>
+      <ResumeLinks
+        href={PDF}
+        target="_blank"
+        rel="noreferrer"
+        onClick={() => setShowDropDown(!showDropDown)}
+      >
         <FiExternalLink />
         Open Resume in a New Tab
       </ResumeLinks>
 
-      {/* <ResumeLinks href={PDF} download onClick={() => setShowDropDown(!showDropDown)}> */}
-      <ResumeLinks href={PDF} download>
+      <ResumeLinks href={PDF} download onClick={() => setShowDropDown(!showDropDown)}>
         <FiDownload />
         Download PDF
       </ResumeLinks>

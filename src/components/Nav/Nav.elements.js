@@ -7,8 +7,11 @@ export const NavRoot = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  margin-right: 1rem;
+  margin-right: 2rem;
+
+  @media (max-width: 600px){
+    display: none;
+  }
 `;
 
 export const Button = styled.button`

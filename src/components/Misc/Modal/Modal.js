@@ -19,7 +19,7 @@ const Modal = (props) => {
         closeModal={closeModal}
         icons
       />
-      <Icons />
+      {/* <Icons /> */}
     </ModalRoot>
   );
 };
