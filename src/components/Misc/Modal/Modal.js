@@ -2,7 +2,7 @@ import React from "react";
 import { ModalRoot } from "./StyledModal";
 
 import Nav from "../../Nav/Nav";
-import Icons from "../../Header/Icons/Icons";
+// import Icons from "../../Header/Icons/Icons";
 
 const Modal = (props) => {
   const closeModal = () => props.toggleModal();
