@@ -12,7 +12,7 @@ const Modal = ({ closeAll, scrollClickHandler, showResume }) => {
           &times;
         </button>
       </div>
-      <Nav scrollClickHandler={scrollClickHandler} closeModal={closeAll} showResume={showResume} />
+      <Nav scrollClickHandler={scrollClickHandler} closeModal={closeAll} showResume={showResume} modal/>
       {/* <Icons /> */}
     </ModalRoot>
   );
