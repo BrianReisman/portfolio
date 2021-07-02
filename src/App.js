@@ -28,8 +28,8 @@ function App() {
   const headerRef = useRef(null);
 
   const scrollClickHandler = (e) => {
-    const splitClassNames = e.target.className.split(' ')
-    const className = splitClassNames[splitClassNames.length -1]
+    const splitClassNames = e.target.className.split(' ');
+    const className = splitClassNames[splitClassNames.length - 1];
     let section =
       className === 'stack'
         ? workRef
@@ -55,13 +55,19 @@ function App() {
     }
 
     if (showModal) {
-      setShowModal(!showModal);
+      setShowModal(false);
     }
   };
 
   return (
     <StyledApp>
-      {showModal && <Modal scrollClickHandler={scrollClickHandler} toggleModal={toggleModal} />}
+      {showModal && (
+        <Modal
+          scrollClickHandler={scrollClickHandler}
+          toggleModal={toggleModal}
+        />
+      )}
+
       <Header
         scrollClickHandler={scrollClickHandler}
         headerRef={headerRef}

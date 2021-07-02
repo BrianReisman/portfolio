@@ -7,8 +7,7 @@ const StyledHamburger = styled.div`
   justify-content: space-between;
   width: 40px;
   height: 22px;
-  position: relative;
-  /* top: -16px; */
+  margin-right: 20px;
 
   .row {
     width: 40px;

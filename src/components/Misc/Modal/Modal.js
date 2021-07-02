@@ -1,11 +1,11 @@
-import React from "react";
-import { ModalRoot } from "./StyledModal";
+import React from 'react';
+import { ModalRoot } from './StyledModal';
 
-import Nav from "../../Nav/Nav";
+import Nav from '../../Nav/Nav';
 // import Icons from "../../Header/Icons/Icons";
 
-const Modal = (props) => {
-  const closeModal = () => props.toggleModal();
+const Modal = ({ toggleModal, scrollClickHandler }) => {
+  const closeModal = () => toggleModal();
 
   return (
     <ModalRoot className="active">
@@ -15,9 +15,8 @@ const Modal = (props) => {
         </button>
       </div>
       <Nav
-        scrollClickHandler={props.scrollClickHandler}
+        scrollClickHandler={scrollClickHandler}
         closeModal={closeModal}
-        icons
       />
       {/* <Icons /> */}
     </ModalRoot>
