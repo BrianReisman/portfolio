@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BsClipboard } from 'react-icons/bs';
 import { FcCheckmark } from 'react-icons/fc';
 import styled from 'styled-components';
 
 const Icon = styled.div`
-  *, *::before, *::after{
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
   }
-  svg, #check, #board {
+  svg,
+  #check,
+  #board {
     height: 16px;
     width: 16px;
     margin-right: 0;
@@ -31,24 +35,20 @@ const Icon = styled.div`
     border-color: ${({ clicked }) => (clicked ? '#9be9a8' : '#1b1f2326')};
     transition-duration: 0.1s;
   }
+  :focus {
+    border-right: 1px solid #ccc;
+    border: 1px solid #0366d6;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    z-index: 1;
+  }
 
+  /* border: 1px solid red; */
 `;
 
-const CopyIcon = ({ onClickCopy }) => {
-  const [clicked, setClicked] = useState(false);
-
-  const clickHandler = () => {
-    onClickCopy();
-    setClicked(true);
-
-    setTimeout(() => {
-      setClicked(false);
-    }, 1500);
-  };
-
+const CopyIcon = ({ clickHandler, clicked }) => {
   return (
-    <Icon onClick={clickHandler} clicked={clicked}>
-      {clicked ? <FcCheckmark id="check"/> : <BsClipboard role="button" id="board"/>}
+    <Icon onClick={clickHandler} clicked={clicked} tabIndex={0}>
+      {clicked ? <FcCheckmark id="check" /> : <BsClipboard role="button" id="board" />}
     </Icon>
   );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import CopyIcon from '../atom/CopyIcon';
@@ -53,6 +53,7 @@ const Module = styled.div`
 const CopyBar = styled.div`
   /* border: 1px solid #aaa; */
 
+  position: relative;
   display: flex;
   width: 100%;
 `;
@@ -114,40 +115,89 @@ const JSONHeading = styled.div`
   /* border: 1px solid gold; */
 `;
 
-const url = 'https://vercel-api-ii.vercel.app/api/resume';
+const CopiedMessage = styled.div`
+  /* display: ${({ clicked }) => (clicked ? 'inherit' : 'none')}; */
+  opacity: ${({ clicked }) => (clicked ? 1 : 0)};
+  font-size: 11px;
+  position: absolute;
+  right: -6px;
+  top: -33px;
+  border: 1px solid black;
+  padding: 6px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  transition: .25s ease-in;
+  :before,
+  :after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0px;
+  }
+  :before {
+    border: 6px solid #00000000;
+    border-top: 6px solid black;
+    z-index: 3;
+    left: 18px;
+    top: 23px;
+  }
+  /* :after {
+    border: 8px solid #00000000;
+    border-top: 8px solid white;
+    z-index: 4;
+    left: 23px;
+    top: 23px;
+  } */
+`;
 
-const onClickCopy = () => navigator.clipboard.writeText(url);
+const ResumeBlock = ({ showDropDown, closeAll }) => {
+  const [clicked, setClicked] = useState(false);
 
-const ResumeBlock = ({ showDropDown, closeAll }) => (
-  <Module showDropDown={showDropDown}>
-    <ResumeLinks href={PDF} target="_blank" rel="noreferrer" onClick={closeAll}>
-      <FiExternalLink />
-      Open Resume in a New Tab
-    </ResumeLinks>
+  const url = 'https://vercel-api-ii.vercel.app/api/resume';
 
-    <ResumeLinks href={PDF} download onClick={closeAll}>
-      <FiDownload />
-      Download PDF
-    </ResumeLinks>
+  const onClickCopy = () => navigator.clipboard.writeText(url);
 
-    <Copy>
-      {/* //TODO add icon and font weight 500 here also */}
-      <div>
+  const clickHandler = () => {
+    onClickCopy();
+    setClicked(true);
+
+    setTimeout(() => {
+      setClicked(false);
+    }, 1500);
+  };
+
+  return (
+    <Module showDropDown={showDropDown}>
+      <ResumeLinks href={PDF} target="_blank" rel="noreferrer" onClick={closeAll}>
+        <FiExternalLink />
+        Open Resume in a New Tab
+      </ResumeLinks>
+
+      <ResumeLinks href={PDF} download onClick={closeAll}>
+        <FiDownload />
+        Download PDF
+      </ResumeLinks>
+
+      <Copy>
+        {/* //TODO add icon and font weight 500 here also */}
         <JSONHeading>
           <GoTerminal />
           JSON Resume API
         </JSONHeading>
-      </div>
-      <CopyBar>
-        <CopyCodeInput url={url} />
-        <CopyIcon onClickCopy={onClickCopy} url={url} />
-      </CopyBar>
-      <Text>
-        If you're more JSON inclined, feel free to <code>get</code> my resume here. Postman guy?
-        Insomnia gal? Plain ol' browser? You know what to do.
-      </Text>
-    </Copy>
-  </Module>
-);
 
+        <CopyBar>
+          <CopyCodeInput url={url} />
+          <CopyIcon clickHandler={clickHandler} url={url} clicked={clicked} />
+          <CopiedMessage clicked={clicked}>Copied!</CopiedMessage>
+        </CopyBar>
+
+        <Text>
+          If you're more JSON inclined, feel free to <code>get</code> my resume here. Postman guy?
+          Insomnia gal? Plain ol' browser? You know what to do.
+        </Text>
+      </Copy>
+    </Module>
+  );
+};
 export default ResumeBlock;
