@@ -32,13 +32,16 @@ const Icon = styled.div`
   cursor: pointer;
   :hover {
     background-color: #f3f4f6;
-    border-color: ${({ clicked }) => (clicked ? '#9be9a8' : '#1b1f2326')};
+    /* border-color: ${({ clicked }) => (clicked ? '#9be9a8' : '#1b1f2326')}; */
     transition-duration: 0.1s;
   }
   :focus {
     border-right: 1px solid #ccc;
-    border: 1px solid #0366d6;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    border: 1px solid
+      ${({ clicked }) => (clicked ? '#40c463 0 0 0 3px' : ' #0366d6 0px 0px 0px 3px;')};
+    box-shadow: ${({ clicked }) =>
+      clicked ? '#9be9a8 0 0 0 3px' : 'rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;'};
+
     z-index: 1;
   }
 

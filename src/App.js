@@ -19,6 +19,10 @@ function App() {
   const [showModal, setShowModal] = useState(false);
   const [displayOverlay, setDisplayOverlay] = useState(false);
 
+  const keyClose = (e) => {
+    if (e.key === 'Escape') closeAll();
+  };
+
   const closeAll = () => {
     // console.log('closeAll');
     setShowDropDown(false);
@@ -82,7 +86,7 @@ function App() {
   }, [showModal]);
 
   return (
-    <StyledApp>
+    <StyledApp onKeyDown={keyClose}>
       {showModal && (
         <div>
           <Modal
