@@ -5,7 +5,6 @@ import ResumeBlock from '../module/ResumeBlock';
 import PDF from '../../assets/Brian Reisman - Resume.pdf';
 
 const Nav = ({ scrollClickHandler, showDropDown, showResume, closeAll, modal }) => {
-  console.log(modal);
   return (
     <NavRoot>
       <Button onClick={scrollClickHandler} className="stack">

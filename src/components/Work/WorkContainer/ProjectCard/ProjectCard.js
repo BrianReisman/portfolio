@@ -33,8 +33,6 @@ const ProjectCard = ({ data }) => {
     </ul>
   );
 
-  // console.log(list);
-
   return (
     <StyledProjectCard>
       <h3 className="cardSection">{data.title}</h3>
