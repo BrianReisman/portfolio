@@ -2,10 +2,7 @@ import styled from 'styled-components';
 
 const StyledOverlay = styled.div`
   background-color: #11111160;
-  display: ${(props) => {
-    console.log(props);
-    return props.displayOverlay ? 'absolute' : 'none';
-  }};
+  display: ${({ displayOverlay }) => (displayOverlay ? 'absolute' : 'none')};
   height: 100%;
   width: 100%;
   position: absolute;
@@ -17,8 +14,5 @@ const StyledOverlay = styled.div`
 `;
 
 export const Overlay = ({ displayOverlay, closeAll }) => (
-  <StyledOverlay
-    displayOverlay={displayOverlay}
-    onClick={closeAll}
-  />
+  <StyledOverlay displayOverlay={displayOverlay} onClick={closeAll} />
 );

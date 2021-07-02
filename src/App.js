@@ -20,21 +20,21 @@ function App() {
   const [displayOverlay, setDisplayOverlay] = useState(false);
 
   const closeAll = () => {
-    console.log('closeAll');
+    // console.log('closeAll');
     setShowDropDown(false);
     setDisplayOverlay(false);
     setShowModal(false);
   };
 
   const displayModal = () => {
-    console.log('displayModal');
+    // console.log('displayModal');
     setShowDropDown(false);
     setDisplayOverlay(true);
     setShowModal(true);
   };
 
   const showResume = () => {
-    console.log('showResume');
+    // console.log('showResume');
     setShowDropDown(true);
     setDisplayOverlay(true);
     setShowModal(false);
