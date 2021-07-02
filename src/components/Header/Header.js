@@ -6,19 +6,21 @@ import Logo from './Logo/Logo';
 import Hamburger from './Hamburger/Hamburger';
 // import Icons from './Icons/Icons';
 
-const Header = ({ showDropDown, setShowDropDown, toggleModal, headerRef, scrollClickHandler }) => {
-  const clickHandler = () => {
-    toggleModal();
-  };
-
+const Header = ({
+  showDropDown,
+  displayModal,
+  headerRef,
+  scrollClickHandler,
+  showResume,
+}) => {
   return (
     <StyledHeader ref={headerRef}>
       <Logo scrollClickHandler={scrollClickHandler} />
-      <Hamburger onClick={clickHandler} />
+      <Hamburger onClick={displayModal} />
       <Nav
         scrollClickHandler={scrollClickHandler}
         showDropDown={showDropDown}
-        setShowDropDown={setShowDropDown}
+        showResume={showResume}
       />
       {/* <Icons /> */}
     </StyledHeader>

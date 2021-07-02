@@ -3,7 +3,8 @@ import styled from 'styled-components';
 const StyledOverlay = styled.div`
   background-color: #11111160;
   display: ${(props) => {
-    return props.showDropDown ? 'absolute' : 'none';
+    console.log(props);
+    return props.displayOverlay ? 'absolute' : 'none';
   }};
   height: 100%;
   width: 100%;
@@ -15,11 +16,9 @@ const StyledOverlay = styled.div`
   z-index: 5;
 `;
 
-export const Overlay = ({ showDropDown, setShowDropDown }) => (
+export const Overlay = ({ displayOverlay, closeAll }) => (
   <StyledOverlay
-    showDropDown={showDropDown}
-    onClick={() => {
-      setShowDropDown(!showDropDown);
-    }}
+    displayOverlay={displayOverlay}
+    onClick={closeAll}
   />
 );

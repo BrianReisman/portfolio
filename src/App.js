@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 import './App.css';
 
@@ -17,9 +17,27 @@ import { Overlay } from './components/atom/Overlay';
 function App() {
   const [showDropDown, setShowDropDown] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [displayOverlay, setDisplayOverlay] = useState(false);
 
-  const toggleModal = () => {
-    setShowModal(!showModal);
+  const closeAll = () => {
+    console.log('closeAll');
+    setShowDropDown(false);
+    setDisplayOverlay(false);
+    setShowModal(false);
+  };
+
+  const displayModal = () => {
+    console.log('displayModal');
+    setShowDropDown(false);
+    setDisplayOverlay(true);
+    setShowModal(true);
+  };
+
+  const showResume = () => {
+    console.log('showResume');
+    setShowDropDown(true);
+    setDisplayOverlay(true);
+    setShowModal(false);
   };
 
   const workRef = useRef(null);
@@ -54,26 +72,33 @@ function App() {
       window.scrollBy({ top: yAxis - offsetVal, letf: 0, behavior: 'smooth' });
     }
 
-    if (showModal) {
-      setShowModal(false);
-    }
+    closeAll();
   };
+
+  useEffect(() => {
+    if (showModal) {
+      setDisplayOverlay(true);
+    }
+  }, [showModal]);
 
   return (
     <StyledApp>
       {showModal && (
-        <Modal
-          scrollClickHandler={scrollClickHandler}
-          toggleModal={toggleModal}
-        />
+        <div>
+          <Modal
+            scrollClickHandler={scrollClickHandler}
+            closeAll={closeAll}
+            showResume={showResume}
+          />
+        </div>
       )}
 
       <Header
         scrollClickHandler={scrollClickHandler}
         headerRef={headerRef}
-        toggleModal={toggleModal}
+        displayModal={displayModal}
         showDropDown={showDropDown}
-        setShowDropDown={setShowDropDown}
+        showResume={showResume}
       />
       <Hero />
       <Spacer />
@@ -83,7 +108,7 @@ function App() {
       <Spacer />
       <Connect refType={connectRef} />
       <Footer />
-      {showModal && (
+      {/* {showModal && (
         <div
           id="overlay"
           className="active"
@@ -91,8 +116,8 @@ function App() {
             toggleModal();
           }}
         ></div>
-      )}
-      <Overlay showDropDown={showDropDown} setShowDropDown={setShowDropDown} />
+      )} */}
+      <Overlay displayOverlay={displayOverlay} closeAll={closeAll} />
     </StyledApp>
   );
 }

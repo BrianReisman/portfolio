@@ -118,45 +118,36 @@ const url = 'https://vercel-api-ii.vercel.app/api/resume';
 
 const onClickCopy = () => navigator.clipboard.writeText(url);
 
-const ResumeDropDown = ({ showDropDown, setShowDropDown }) => {
-  return (
-    <Module showDropDown={showDropDown}>
-      <ResumeLinks
-        href={PDF}
-        target="_blank"
-        rel="noreferrer"
-        onClick={() => setShowDropDown(!showDropDown)}
-      >
-        <FiExternalLink />
-        Open Resume in a New Tab
-      </ResumeLinks>
+const ResumeDropDown = ({ showDropDown, closeAll }) => (
+  <Module showDropDown={showDropDown}>
+    <ResumeLinks href={PDF} target="_blank" rel="noreferrer" onClick={closeAll}>
+      <FiExternalLink />
+      Open Resume in a New Tab
+    </ResumeLinks>
 
-      <ResumeLinks href={PDF} download onClick={() => setShowDropDown(!showDropDown)}>
-        <FiDownload />
-        Download PDF
-      </ResumeLinks>
+    <ResumeLinks href={PDF} download onClick={closeAll}>
+      <FiDownload />
+      Download PDF
+    </ResumeLinks>
 
-      <Copy>
-        {/* //TODO add icon and font weight 500 here also */}
-        <div>
-          <JSONHeading>
-            <GoTerminal />
-            JSON Resume API
-          </JSONHeading>
-        </div>
-        <CopyBar>
-          <CopyCodeInput url={url} />
-          <CopyIcon onClickCopy={onClickCopy} url={url} />
-        </CopyBar>
-        <Text>
-          If you're more JSON inclined, feel free to <code>get</code> my resume here. Postman guy?
-          Insomnia gal? Plain ol' browser? You know what to do.
-        </Text>
-      </Copy>
-    </Module>
-  );
-};
+    <Copy>
+      {/* //TODO add icon and font weight 500 here also */}
+      <div>
+        <JSONHeading>
+          <GoTerminal />
+          JSON Resume API
+        </JSONHeading>
+      </div>
+      <CopyBar>
+        <CopyCodeInput url={url} />
+        <CopyIcon onClickCopy={onClickCopy} url={url} />
+      </CopyBar>
+      <Text>
+        If you're more JSON inclined, feel free to <code>get</code> my resume here. Postman guy?
+        Insomnia gal? Plain ol' browser? You know what to do.
+      </Text>
+    </Copy>
+  </Module>
+);
 
 export default ResumeDropDown;
-
-// TODO figure out the extra bottom padding below Download PDF Resume
