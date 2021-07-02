@@ -99,6 +99,7 @@ function App() {
         displayModal={displayModal}
         showDropDown={showDropDown}
         showResume={showResume}
+        closeAll={closeAll}
       />
       <Hero />
       <Spacer />

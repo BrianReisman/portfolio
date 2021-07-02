@@ -7,11 +7,12 @@ import Hamburger from './Hamburger/Hamburger';
 // import Icons from './Icons/Icons';
 
 const Header = ({
-  showDropDown,
-  displayModal,
-  headerRef,
   scrollClickHandler,
+  headerRef,
+  displayModal,
+  showDropDown,
   showResume,
+  closeAll
 }) => {
   return (
     <StyledHeader ref={headerRef}>
@@ -21,6 +22,7 @@ const Header = ({
         scrollClickHandler={scrollClickHandler}
         showDropDown={showDropDown}
         showResume={showResume}
+        closeAll={closeAll}
       />
       {/* <Icons /> */}
     </StyledHeader>

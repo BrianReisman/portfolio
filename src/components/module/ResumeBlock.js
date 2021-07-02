@@ -118,7 +118,7 @@ const url = 'https://vercel-api-ii.vercel.app/api/resume';
 
 const onClickCopy = () => navigator.clipboard.writeText(url);
 
-const ResumeDropDown = ({ showDropDown, closeAll }) => (
+const ResumeBlock = ({ showDropDown, closeAll }) => (
   <Module showDropDown={showDropDown}>
     <ResumeLinks href={PDF} target="_blank" rel="noreferrer" onClick={closeAll}>
       <FiExternalLink />
@@ -150,4 +150,4 @@ const ResumeDropDown = ({ showDropDown, closeAll }) => (
   </Module>
 );
 
-export default ResumeDropDown;
+export default ResumeBlock;

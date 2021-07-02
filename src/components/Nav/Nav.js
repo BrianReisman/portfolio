@@ -3,13 +3,7 @@ import { NavRoot, Button } from './Nav.elements';
 import { BsCaretDown } from 'react-icons/bs';
 import ResumeBlock from '../module/ResumeBlock';
 
-const Nav = ({
-  scrollClickHandler,
-  showDropDown,
-  setShowDropDown,
-  setDisplayOverlay,
-  showResume,
-}) => (
+const Nav = ({ scrollClickHandler, showDropDown, showResume, closeAll }) => (
   <NavRoot>
     <Button onClick={scrollClickHandler} className="stack">
       Stack
@@ -25,11 +19,7 @@ const Nav = ({
       Resume
       <BsCaretDown className="downArrow" />
     </Button>
-    <ResumeBlock
-      showDropDown={showDropDown}
-      setShowDropDown={setShowDropDown}
-      setDisplayOverlay={setDisplayOverlay}
-    />
+    <ResumeBlock showDropDown={showDropDown} closeAll={closeAll} />
   </NavRoot>
 );
 
