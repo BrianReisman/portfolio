@@ -34,6 +34,7 @@ const onClickSelect = ({ target: { id } }) => {
   const inputEl = document.getElementById(id);
   inputEl.focus();
   inputEl.select();
+  inputEl.setSelectionRange(0, 1000);
 };
 
 const copycode = ({ url }) => (

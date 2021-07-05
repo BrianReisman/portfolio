@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavRoot, Button } from './Nav.elements';
 import { BsCaretDown, BsBoxArrowUpRight } from 'react-icons/bs';
-import ResumeBlock from '../module/ResumeBlock';
+import ResumeBlock from '../molecule/ResumeMenu/ResumeMenu';
 import PDF from '../../assets/Brian Reisman - Resume.pdf';
 
 const Nav = ({ scrollClickHandler, showDropDown, showResume, closeAll, modal }) => {
